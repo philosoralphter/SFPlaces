@@ -17,10 +17,10 @@
 		DE6B7148172220F300E53A23 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6B7147172220F300E53A23 /* Default@2x.png */; };
 		DE6B714A172220F300E53A23 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6B7149172220F300E53A23 /* Default-568h@2x.png */; };
 		DE6B714D172220F300E53A23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6B714B172220F300E53A23 /* MainStoryboard.storyboard */; };
-		DE6B7150172220F300E53A23 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6B714F172220F300E53A23 /* FirstViewController.m */; };
+		DE6B7150172220F300E53A23 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6B714F172220F300E53A23 /* MapViewController.m */; };
 		DE6B7152172220F300E53A23 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6B7151172220F300E53A23 /* first.png */; };
 		DE6B7154172220F300E53A23 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6B7153172220F300E53A23 /* first@2x.png */; };
-		DE6B7157172220F300E53A23 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6B7156172220F300E53A23 /* SecondViewController.m */; };
+		DE6B7157172220F300E53A23 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6B7156172220F300E53A23 /* TableViewController.m */; };
 		DE6B7159172220F300E53A23 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6B7158172220F300E53A23 /* second.png */; };
 		DE6B715B172220F300E53A23 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6B715A172220F300E53A23 /* second@2x.png */; };
 		DE6B7163172220F300E53A23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6B7162172220F300E53A23 /* SenTestingKit.framework */; };
@@ -28,6 +28,8 @@
 		DE6B7165172220F300E53A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6B7135172220F300E53A23 /* Foundation.framework */; };
 		DE6B716D172220F300E53A23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE6B716B172220F300E53A23 /* InfoPlist.strings */; };
 		DE6B7170172220F300E53A23 /* SFPlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6B716F172220F300E53A23 /* SFPlacesTests.m */; };
+		DEAF30AF172756ED000EBC60 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF30AE172756ED000EBC60 /* MapKit.framework */; };
+		DEAF30B1172756F7000EBC60 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF30B0172756F7000EBC60 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +57,12 @@
 		DE6B7147172220F300E53A23 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DE6B7149172220F300E53A23 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DE6B714C172220F300E53A23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DE6B714E172220F300E53A23 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		DE6B714F172220F300E53A23 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		DE6B714E172220F300E53A23 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DE6B714F172220F300E53A23 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		DE6B7151172220F300E53A23 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		DE6B7153172220F300E53A23 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		DE6B7155172220F300E53A23 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		DE6B7156172220F300E53A23 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		DE6B7155172220F300E53A23 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		DE6B7156172220F300E53A23 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		DE6B7158172220F300E53A23 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		DE6B715A172220F300E53A23 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		DE6B7161172220F300E53A23 /* SFPlacesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFPlacesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,8 @@
 		DE6B716C172220F300E53A23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE6B716E172220F300E53A23 /* SFPlacesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPlacesTests.h; sourceTree = "<group>"; };
 		DE6B716F172220F300E53A23 /* SFPlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPlacesTests.m; sourceTree = "<group>"; };
+		DEAF30AE172756ED000EBC60 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DEAF30B0172756F7000EBC60 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAF30B1172756F7000EBC60 /* CoreLocation.framework in Frameworks */,
+				DEAF30AF172756ED000EBC60 /* MapKit.framework in Frameworks */,
 				DE6B7134172220F300E53A23 /* UIKit.framework in Frameworks */,
 				DE6B7136172220F300E53A23 /* Foundation.framework in Frameworks */,
 				DE6B7138172220F300E53A23 /* CoreGraphics.framework in Frameworks */,
@@ -117,6 +123,8 @@
 		DE6B7132172220F200E53A23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEAF30B0172756F7000EBC60 /* CoreLocation.framework */,
+				DEAF30AE172756ED000EBC60 /* MapKit.framework */,
 				DE6B7133172220F200E53A23 /* UIKit.framework */,
 				DE6B7135172220F300E53A23 /* Foundation.framework */,
 				DE6B7137172220F300E53A23 /* CoreGraphics.framework */,
@@ -131,14 +139,10 @@
 				DE6B7142172220F300E53A23 /* AppDelegate.h */,
 				DE6B7143172220F300E53A23 /* AppDelegate.m */,
 				DE6B714B172220F300E53A23 /* MainStoryboard.storyboard */,
-				DE6B714E172220F300E53A23 /* FirstViewController.h */,
-				DE6B714F172220F300E53A23 /* FirstViewController.m */,
-				DE6B7151172220F300E53A23 /* first.png */,
-				DE6B7153172220F300E53A23 /* first@2x.png */,
-				DE6B7155172220F300E53A23 /* SecondViewController.h */,
-				DE6B7156172220F300E53A23 /* SecondViewController.m */,
-				DE6B7158172220F300E53A23 /* second.png */,
-				DE6B715A172220F300E53A23 /* second@2x.png */,
+				DE6B714E172220F300E53A23 /* MapViewController.h */,
+				DE6B714F172220F300E53A23 /* MapViewController.m */,
+				DE6B7155172220F300E53A23 /* TableViewController.h */,
+				DE6B7156172220F300E53A23 /* TableViewController.m */,
 				DE6B713A172220F300E53A23 /* Supporting Files */,
 			);
 			path = SFPlaces;
@@ -147,6 +151,10 @@
 		DE6B713A172220F300E53A23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DE6B7151172220F300E53A23 /* first.png */,
+				DE6B7153172220F300E53A23 /* first@2x.png */,
+				DE6B7158172220F300E53A23 /* second.png */,
+				DE6B715A172220F300E53A23 /* second@2x.png */,
 				DE6B713B172220F300E53A23 /* SFPlaces-Info.plist */,
 				DE6B713C172220F300E53A23 /* InfoPlist.strings */,
 				DE6B713F172220F300E53A23 /* main.m */,
@@ -293,8 +301,8 @@
 			files = (
 				DE6B7140172220F300E53A23 /* main.m in Sources */,
 				DE6B7144172220F300E53A23 /* AppDelegate.m in Sources */,
-				DE6B7150172220F300E53A23 /* FirstViewController.m in Sources */,
-				DE6B7157172220F300E53A23 /* SecondViewController.m in Sources */,
+				DE6B7150172220F300E53A23 /* MapViewController.m in Sources */,
+				DE6B7157172220F300E53A23 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +483,7 @@
 				DE6B7175172220F300E53A23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE6B7176172220F300E53A23 /* Build configuration list for PBXNativeTarget "SFPlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +492,7 @@
 				DE6B7178172220F300E53A23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
