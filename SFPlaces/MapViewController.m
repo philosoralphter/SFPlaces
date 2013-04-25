@@ -44,9 +44,12 @@
     
     //----------
     
+    
+    
+    
     //---------
     //show example customized annotation
-    //preparation here, implementation insive mapView:viewForAnnotation
+    //preparation (of annatation object) here, implementation inside mapView:viewForAnnotation:
     //-------
     
     //create location object/annotation
@@ -73,7 +76,11 @@
 -(MKAnnotationView *)mapView: (MKMapView *) mapView viewForAnnotation:(id<MKAnnotation>)annotation{
     //---------
     //show example customized annotation
-    //implemented here
+    //implemented here.
+    //
+    //this method is called when an annotation is added to the map I believe
+    //so once i am comfortable with everything that is going on, I will be adding
+    //the logic here to correctly identify and reuse the annotations, etc.
     //-------
     
     //if annotation passed is User location, return nil
@@ -83,19 +90,18 @@
     //only create for "expanded notation"
     if ([annotation.title isEqual: @"Expanded Annotation"]){
         
-        //Create custom annotation
-        AnnotationView *annotationView = [[AnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"Custom Annotation"];
-        //With right callout button for more details:
-        UIButton *moreInfoButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        annotationView.rightCalloutAccessoryView = moreInfoButton;
-    
-        
         // If an existing pin view was not available, create one.
-        MKPinAnnotationView* pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
-        pinView.pinColor = MKPinAnnotationColorGreen;
-        pinView.animatesDrop = YES;
+        //(creates one anyway right now just for examplary purposes)
+        MKPinAnnotationView* customPinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
+        customPinView.pinColor = MKPinAnnotationColorGreen;
+        customPinView.animatesDrop = YES;
+        customPinView.canShowCallout = YES;
         
-        return annotationView;
+        //Add right callout button to custom pinView for more details:
+        UIButton *moreInfoButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        customPinView.rightCalloutAccessoryView = moreInfoButton;
+        
+        return customPinView;
     }
     return nil;
 }

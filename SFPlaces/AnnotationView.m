@@ -19,6 +19,12 @@
     return self;
 }
 
+/*-(id)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier{
+    self.annotation = annotation;
+    self.setR = reuseIdentifier;
+}
+*/
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
