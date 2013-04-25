@@ -28,6 +28,9 @@
 		DE6B7165172220F300E53A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6B7135172220F300E53A23 /* Foundation.framework */; };
 		DE6B716D172220F300E53A23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE6B716B172220F300E53A23 /* InfoPlist.strings */; };
 		DE6B7170172220F300E53A23 /* SFPlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6B716F172220F300E53A23 /* SFPlacesTests.m */; };
+		DEA6DF741727D669007FBE0F /* AnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA6DF731727D669007FBE0F /* AnnotationView.m */; };
+		DEA6DF771728914F007FBE0F /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA6DF761728914F007FBE0F /* MapAnnotation.m */; };
+		DEA6DF78172891B7007FBE0F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF30AE172756ED000EBC60 /* MapKit.framework */; };
 		DEAF30AF172756ED000EBC60 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF30AE172756ED000EBC60 /* MapKit.framework */; };
 		DEAF30B1172756F7000EBC60 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF30B0172756F7000EBC60 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +74,10 @@
 		DE6B716C172220F300E53A23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE6B716E172220F300E53A23 /* SFPlacesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPlacesTests.h; sourceTree = "<group>"; };
 		DE6B716F172220F300E53A23 /* SFPlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPlacesTests.m; sourceTree = "<group>"; };
+		DEA6DF721727D669007FBE0F /* AnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationView.h; sourceTree = "<group>"; };
+		DEA6DF731727D669007FBE0F /* AnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationView.m; sourceTree = "<group>"; };
+		DEA6DF751728914F007FBE0F /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		DEA6DF761728914F007FBE0F /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 		DEAF30AE172756ED000EBC60 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DEAF30B0172756F7000EBC60 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -92,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA6DF78172891B7007FBE0F /* MapKit.framework in Frameworks */,
 				DE6B7163172220F300E53A23 /* SenTestingKit.framework in Frameworks */,
 				DE6B7164172220F300E53A23 /* UIKit.framework in Frameworks */,
 				DE6B7165172220F300E53A23 /* Foundation.framework in Frameworks */,
@@ -162,6 +170,10 @@
 				DE6B7145172220F300E53A23 /* Default.png */,
 				DE6B7147172220F300E53A23 /* Default@2x.png */,
 				DE6B7149172220F300E53A23 /* Default-568h@2x.png */,
+				DEA6DF721727D669007FBE0F /* AnnotationView.h */,
+				DEA6DF731727D669007FBE0F /* AnnotationView.m */,
+				DEA6DF751728914F007FBE0F /* MapAnnotation.h */,
+				DEA6DF761728914F007FBE0F /* MapAnnotation.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -303,6 +315,8 @@
 				DE6B7144172220F300E53A23 /* AppDelegate.m in Sources */,
 				DE6B7150172220F300E53A23 /* MapViewController.m in Sources */,
 				DE6B7157172220F300E53A23 /* TableViewController.m in Sources */,
+				DEA6DF741727D669007FBE0F /* AnnotationView.m in Sources */,
+				DEA6DF771728914F007FBE0F /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
