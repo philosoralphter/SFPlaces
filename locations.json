@@ -1,0 +1,18 @@
+{
+    "locations": [
+     {
+          "name":"Sample",
+          "latitude":"37.72529",
+          "longitude":"-122.451151",
+          "description":"This sample is a the lat/long for CCSF",
+     },
+     
+     {
+          "name":"Osama Bin Laden's House",
+          "latitude":"37.791447",
+          "longitude":"-122.413407",
+          "description":"Osama Bin Laden used to live here",
+     },
+        
+    ]
+}
