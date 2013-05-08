@@ -1,5 +1,5 @@
 //
-//  InterestingPlace.m
+//  AnnotationView.m
 //  SFPlaces
 //
 //  Created by Ralph Samuel on 4/24/13.

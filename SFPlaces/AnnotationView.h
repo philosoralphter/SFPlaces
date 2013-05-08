@@ -1,5 +1,5 @@
 //
-//  InterestingPlace.h
+//  AnnotationView.h
 //  SFPlaces
 //
 //  Created by Ralph Samuel on 4/24/13.

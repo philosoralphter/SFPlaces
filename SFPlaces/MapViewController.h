@@ -18,6 +18,6 @@
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
-
+- (IBAction)unwindFromDetail:(UIStoryboardSegue *)segue;
 
 @end

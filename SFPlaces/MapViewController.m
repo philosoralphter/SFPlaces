@@ -7,6 +7,7 @@
 //
 
 #import "MapViewController.h"
+#import "MapToDetailSegue.h"
 
 
 @interface MapViewController ()
@@ -17,11 +18,8 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
+    [super viewDidLoad];    
     self. mapView.delegate = self;
-    
     self.locationManager = [[CLLocationManager alloc] init];
     [self.locationManager setDelegate:self];
     
@@ -62,6 +60,10 @@
    
 }
 
+- (IBAction)unwindFromDetail:(UIStoryboardSegue *)segue {
+    
+}
+
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     //center on user location once received:
@@ -69,11 +71,12 @@
     //must test to see whether this is called again as soon as it changes or what
     //(we only want this called when the app first opens if at all)
     //---
-    MKCoordinateRegion currentRegion = MKCoordinateRegionMakeWithDistance(self.mapView.userLocation.coordinate, 9000, 9000);
+    MKCoordinateRegion currentRegion = MKCoordinateRegionMakeWithDistance(self.mapView.userLocation.coordinate, 10000, 10000);
     [self.mapView setRegion:currentRegion animated:YES];
 }
 
--(MKAnnotationView *)mapView: (MKMapView *) mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+
+- (MKAnnotationView *)mapView: (MKMapView *) mapView viewForAnnotation:(id<MKAnnotation>)annotation{
     //---------
     //show example customized annotation
     //implemented here.
@@ -95,16 +98,33 @@
         MKPinAnnotationView* customPinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
         customPinView.pinColor = MKPinAnnotationColorGreen;
         customPinView.animatesDrop = YES;
-        customPinView.canShowCallout = YES;
+        
         
         //Add right callout button to custom pinView for more details:
+        //button leads to detail view
         UIButton *moreInfoButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        [moreInfoButton addTarget:self action:@selector (moreInfoButtonPushed) forControlEvents: UIControlEventTouchUpInside];
+        customPinView.canShowCallout = YES;
         customPinView.rightCalloutAccessoryView = moreInfoButton;
+        
         
         return customPinView;
     }
     return nil;
 }
+
+
+//method to trigger segue from map view to detail view
+//called when moreInfoButton pushed from an annotation
+- (void) moreInfoButtonPushed{
+    NSLog(@"moreInfoButton pushed!!!!");
+    [self performSegueWithIdentifier: @"toDetailView" sender:self];
+}
+/*-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+    
+    [self performSegueWithIdentifier:@"toDetailView" sender:self];
+    
+}*/
 
 
 - (void)didReceiveMemoryWarning

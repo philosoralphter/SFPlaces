@@ -9,7 +9,7 @@
             <objects>
                 <viewController title="First" id="2" userLabel="Map View Controller - Map" customClass="MapViewController" sceneMemberID="viewController">
                     <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="yWv-hd-TtI">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <connections>
                             <outlet property="delegate" destination="2" id="Quc-LL-7Tw"/>
@@ -18,41 +18,100 @@
                     <tabBarItem key="tabBarItem" title="Map" image="first" id="7"/>
                     <connections>
                         <outlet property="mapView" destination="yWv-hd-TtI" id="OxN-aa-DS9"/>
+                        <segue destination="oaE-Fo-QUn" kind="modal" identifier="toDetailView" customClass="MapToDetailSegue" modalTransitionStyle="flipHorizontal" id="Eqo-b5-3HC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
         </scene>
-        <!--Table View Controller - List-->
-        <scene sceneID="9L2-yq-ZUk">
+        <!--Detail View Controller-->
+        <scene sceneID="4Gn-jy-sUK">
             <objects>
-                <tableViewController id="MzR-pb-GUY" customClass="TableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZWm-f2-NAc">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                <viewController id="oaE-Fo-QUn" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rU2-oE-9Fi">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Example Detail View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LM9-LM-kEc">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otj-TH-IeA">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back to Map">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0oj-ea-hht" kind="unwind" unwindAction="unwindFromDetail:" id="NYK-ZI-DJw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LM9-LM-kEc" firstAttribute="centerX" secondItem="rU2-oE-9Fi" secondAttribute="centerX" type="default" id="VEi-cy-Z8S"/>
+                            <constraint firstItem="otj-TH-IeA" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="6" id="Z3d-Og-kPv"/>
+                            <constraint firstItem="LM9-LM-kEc" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="97" id="ilU-yV-ANB"/>
+                            <constraint firstAttribute="trailing" secondItem="otj-TH-IeA" secondAttribute="trailing" constant="6" id="tHr-ys-FcO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Fs-If-HDK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFj-T8-6ru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0oj-ea-hht" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="-96"/>
+        </scene>
+        <!--Table View Controller - Root View Controller-->
+        <scene sceneID="oZD-fv-dfN">
+            <objects>
+                <tableViewController id="jbf-fZ-opl" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hky-i3-WDX">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="n70-J6-kP7">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ozv-cU-lLn">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="oaE-Fo-QUn" kind="push" id="WRr-6Y-Uid"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="MzR-pb-GUY" id="7F2-J5-07W"/>
-                            <outlet property="delegate" destination="MzR-pb-GUY" id="v3f-69-Ng7"/>
-                        </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="List" image="second.png" id="9U7-zD-YGt"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="E5e-pE-cxG"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eNW-qa-gEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W98-Fz-an7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="549"/>
+            <point key="canvasLocation" x="1087" y="689"/>
+        </scene>
+        <!--Navigation Controller - List-->
+        <scene sceneID="FAJ-j1-eeR">
+            <objects>
+                <navigationController title="List" definesPresentationContext="YES" id="hTb-fG-SK1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="second.png" id="Jav-oQ-oJs"/>
+                    <navigationItem key="navigationItem" id="Dhw-aK-ajP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5YQ-cr-cxF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jbf-fZ-opl" kind="relationship" relationship="rootViewController" id="tbg-fV-yGc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ZX-gx-y2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693" y="689"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -66,7 +125,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
-                        <segue destination="MzR-pb-GUY" kind="relationship" relationship="viewControllers" id="8FX-jm-2qi"/>
+                        <segue destination="hTb-fG-SK1" kind="relationship" relationship="viewControllers" id="FRR-s1-7qZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -79,19 +138,29 @@
         <image name="second.png" width="30" height="30"/>
     </resources>
     <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+        </class>
         <class className="MapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
             <relationships>
+                <relationship kind="action" name="unwindFromDetail:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
             </relationships>
         </class>
-        <class className="TableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Eqo-b5-3HC"/>
+    </inferredMetricsTieBreakers>
 </document>
