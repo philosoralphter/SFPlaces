@@ -59,9 +59,16 @@
     
    
 }
-
+//------------
+//Method brings back to map view from detail view
+//triggered when back to map button pushed in detail view
+//specifically just before the segue is performed so:
+//
+//TODO: logic to determine which specific location
+//sent it so as to have that annotation on map and selected
+//------------
 - (IBAction)unwindFromDetail:(UIStoryboardSegue *)segue {
-    
+    //segue.identifier
 }
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
@@ -99,32 +106,37 @@
         customPinView.pinColor = MKPinAnnotationColorGreen;
         customPinView.animatesDrop = YES;
         
-        
-        //Add right callout button to custom pinView for more details:
-        //button leads to detail view
+        //Add right callout button to custom pinView for segue to detail view:
+        //
         UIButton *moreInfoButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        [moreInfoButton addTarget:self action:@selector (moreInfoButtonPushed) forControlEvents: UIControlEventTouchUpInside];
+        //[moreInfoButton addTarget:self action:@selector (moreInfoButtonPushed) forControlEvents: UIControlEventTouchUpInside];
         customPinView.canShowCallout = YES;
         customPinView.rightCalloutAccessoryView = moreInfoButton;
-        
         
         return customPinView;
     }
     return nil;
 }
 
-
+//--------
 //method to trigger segue from map view to detail view
 //called when moreInfoButton pushed from an annotation
-- (void) moreInfoButtonPushed{
+//
+//!!!Consider replacing with next commented method!!!
+//--------
+/*- (void) moreInfoButtonPushed{
     NSLog(@"moreInfoButton pushed!!!!");
     [self performSegueWithIdentifier: @"toDetailView" sender:self];
-}
-/*-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
-    
-    [self performSegueWithIdentifier:@"toDetailView" sender:self];
-    
 }*/
+
+-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+    
+ NSLog(@"moreInfoButton pushed!!!!");
+ [self performSegueWithIdentifier: @"toDetailView" sender:self];
+ 
+}
+
+
 
 
 - (void)didReceiveMemoryWarning
