@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>JSON Generator</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<style>
+
+iframe{
+   position:absolute;
+   left:320px;
+   top:10px;
+   height:1000px;
+   width:900px;
+}
+
+</style>
+	
+	
+</head>
+<body>
+<h1>JSON Generator</h1>
+<input type="text" id="name" value="name" /><br/>
+<input type="text" id="lat" value="lat" /><br/>
+<input type="text" id="lon" value="lon"/><br/>
+<textarea id='description' rows="10" cols="40">Description</textarea> <br/>
+<input type='button' value="Generate" onClick="generate()"> <br/>
+output<br/>
+<textarea id="output" rows="10" cols="40"></textarea>
+</body>
+<br />
+
+<iframe src="http://itouchmap.com/latlong.html">
+</iframe>
+
+
+<script type="text/javascript">
+function generate(){
+var name = $("#name").val();
+var lat = $("#lat").val();
+var lon = $("#lon").val();
+var desc = $("#description").val();
+var output = '{\r' + '     "name":"' + name + '",\r'
+           + '     "latitude":"' + lat + '",\r'
+           + '     "longitude":"' + lon + '",\r'
+           + '     "description":"' + desc + '",\r'
+           + '},';
+
+
+
+
+$("#output").text(output);
+}
+
+</script>
