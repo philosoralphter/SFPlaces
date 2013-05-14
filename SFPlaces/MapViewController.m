@@ -8,7 +8,7 @@
 
 #import "MapViewController.h"
 #import "MapToDetailSegue.h"
-#import "AppDelegate.h"
+
 
 
 @interface MapViewController ()
@@ -40,30 +40,17 @@
     //create MapAnnotations from locations NSDictionaries
     //and add them all to map
     //-------
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];//gain access to locationsArray in AppDelegate
     
+    //gain access to locationsArray in AppDelegate
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    //create custom MapAnotations using custom init method
     for (NSDictionary* item in appDelegate.locationsArray){
-        
         MapAnnotation* annotation = [[MapAnnotation alloc] initWithName: [item valueForKey:@"name"] description:[item valueForKey:@"description"] imgPath: NULL imgTitle:NULL thumbPath:NULL latitude:[[item valueForKey:@"latitude"]doubleValue] longitude: [[item valueForKey:@"longitude"]doubleValue]];
         
         [self.mapView addAnnotation:annotation];
     }
 }
-
-
-
-- (IBAction)unwindFromDetail:(UIStoryboardSegue *)segue {
-    //------------
-    //Method brings back to map view from detail view
-    //triggered when back to map button pushed in detail view
-    //specifically just before the segue is performed so:
-    //
-    //TODO: logic to determine which specific location
-    //sent it so as to have that annotation on map and selected
-    //------------
-    //segue.identifier
-}
-
 
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
@@ -80,8 +67,6 @@
 
 - (MKAnnotationView *)mapView: (MKMapView *) mapView viewForAnnotation:(id<MKAnnotation>)annotation{
     //---------
-    //show example customized annotation
-    //implemented here.
     //
     //this method is called when an annotation is added to the map I believe
     //so once i am comfortable with everything that is going on, I will be adding
@@ -124,6 +109,17 @@
  
 }
 
+- (IBAction)unwindFromDetail:(UIStoryboardSegue *)segue {
+    //------------
+    //Method brings back to map view from detail view
+    //triggered when back to map button pushed in detail view
+    //specifically just before the segue is performed so:
+    //
+    //TODO: logic to determine which specific location
+    //sent it so as to have that annotation on map and selected
+    //------------
+    //segue.identifier
+}
 
 -(void)didReceiveMemoryWarning
 {

@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail View Controller - Details-->
         <scene sceneID="4Gn-jy-sUK">
             <objects>
                 <viewController id="oaE-Fo-QUn" customClass="DetailViewController" sceneMemberID="viewController">
@@ -38,9 +38,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otj-TH-IeA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-3Z-0nU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="Nqe-Fv-Vhr"/>
+                                    <constraint firstAttribute="width" constant="185" id="gqk-1p-8tc"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgp-5g-20B">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="OT1-ZV-yhU"/>
+                                    <constraint firstAttribute="width" constant="240" id="lah-w2-tl0"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDv-r5-Blg">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Back to Map">
+                                <state key="normal" title="Back to map">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,35 +64,45 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0oj-ea-hht" kind="unwind" unwindAction="unwindFromDetail:" id="NYK-ZI-DJw"/>
+                                    <segue destination="0oj-ea-hht" kind="unwind" unwindAction="unwindFromDetail:" id="tWI-9F-VI0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LM9-LM-kEc" firstAttribute="centerX" secondItem="rU2-oE-9Fi" secondAttribute="centerX" type="default" id="VEi-cy-Z8S"/>
-                            <constraint firstItem="otj-TH-IeA" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="6" id="Z3d-Og-kPv"/>
-                            <constraint firstItem="LM9-LM-kEc" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="97" id="ilU-yV-ANB"/>
-                            <constraint firstAttribute="trailing" secondItem="otj-TH-IeA" secondAttribute="trailing" constant="6" id="tHr-ys-FcO"/>
+                            <constraint firstItem="LM9-LM-kEc" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="6" id="BMX-f7-y2H"/>
+                            <constraint firstItem="LM9-LM-kEc" firstAttribute="centerX" secondItem="rU2-oE-9Fi" secondAttribute="centerX" type="default" id="CSC-yP-UTQ"/>
+                            <constraint firstItem="Dha-3Z-0nU" firstAttribute="leading" secondItem="rU2-oE-9Fi" secondAttribute="leading" constant="7" id="Ng1-5n-iYc"/>
+                            <constraint firstItem="nDv-r5-Blg" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="28" id="OMO-Pu-Yed"/>
+                            <constraint firstItem="Dha-3Z-0nU" firstAttribute="top" secondItem="LM9-LM-kEc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QJW-2y-aqD"/>
+                            <constraint firstAttribute="trailing" secondItem="nDv-r5-Blg" secondAttribute="trailing" constant="6" id="tNn-P1-VBg"/>
+                            <constraint firstItem="kgp-5g-20B" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="183" id="w3t-di-GQM"/>
+                            <constraint firstItem="kgp-5g-20B" firstAttribute="centerX" secondItem="LM9-LM-kEc" secondAttribute="centerX" type="default" id="wpa-oO-CeA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5Fs-If-HDK"/>
+                    <navigationItem key="navigationItem" title="Details" id="5Fs-If-HDK">
+                        <barButtonItem key="rightBarButtonItem" title="To Map" id="qrj-kS-DPW">
+                            <connections>
+                                <segue destination="0oj-ea-hht" kind="unwind" unwindAction="unwindFromDetail:" id="fu0-dz-k2n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFj-T8-6ru" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0oj-ea-hht" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1417" y="-96"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
+        <!--Table View Controller - San Francisco Places-->
         <scene sceneID="oZD-fv-dfN">
             <objects>
-                <tableViewController id="jbf-fZ-opl" sceneMemberID="viewController">
+                <tableViewController id="jbf-fZ-opl" customClass="TableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hky-i3-WDX">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="Ozv-cU-lLn">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCellIdentifier" id="Ozv-cU-lLn">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -90,7 +116,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="E5e-pE-cxG"/>
+                    <navigationItem key="navigationItem" title="San Francisco Places" id="E5e-pE-cxG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W98-Fz-an7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,24 +163,6 @@
         <image name="first" width="16" height="16"/>
         <image name="second.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-        </class>
-        <class className="MapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="unwindFromDetail:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

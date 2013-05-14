@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "MapAnnotation.h"
 #import "AnnotationView.h"
+#import "AppDelegate.h"
 
 
 @interface MapViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
