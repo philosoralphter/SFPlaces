@@ -8,6 +8,7 @@
 
 #import "MapViewController.h"
 #import "MapToDetailSegue.h"
+#import "AppDelegate.h"
 
 
 @interface MapViewController ()
@@ -15,6 +16,14 @@
 @end
 
 @implementation MapViewController
+//
+//attempted to use this method to provide better behavior than mapView:didUpdateUserLocation:
+//this zoomed to random place in ocean presumably because user locaion was not yet "updaed"
+//
+/*-(void)viewWillAppear:(BOOL)animated{
+    MKCoordinateRegion currentRegion = MKCoordinateRegionMakeWithDistance(self.mapView.userLocation.coordinate, 10000, 10000);
+    [self.mapView setRegion:currentRegion animated:YES];
+}*/
 
 - (void)viewDidLoad
 {
@@ -26,50 +35,36 @@
     
     //Show User Location
     [self.mapView setShowsUserLocation:YES];
-    
-    //---------
-    //show example Annotation location pin
-    //-------
-    
-    //create location object
-    CLLocationCoordinate2D mockLocation1;
-    mockLocation1.latitude = 37.774989;
-    mockLocation1.longitude = -122.438421;
-    
-    //create and add annotation
-    MapAnnotation *mapAnnotation = [[MapAnnotation alloc]initWithTitle:@"Example Annotation: The Bag" subTitle: @"Example Annotation" coordinate: mockLocation1];
-    [self.mapView addAnnotation:mapAnnotation];
-    
-    //----------
-    
-    
-    
-    
-    //---------
-    //show example customized annotation
-    //preparation (of annatation object) here, implementation inside mapView:viewForAnnotation:
-    //-------
-    
-    //create location object/annotation
-    CLLocationCoordinate2D mockLocation2;
-    mockLocation2.latitude = 37.763658;
-    mockLocation2.longitude = -122.477217;
-    MapAnnotation *mapAnnotation2 = [[MapAnnotation alloc]initWithTitle:@"Expanded Annotation" subTitle: @"The Set" coordinate: mockLocation2];
-    [self.mapView addAnnotation:mapAnnotation2];
-    
    
+    //-------
+    //create MapAnnotations from locations NSDictionaries
+    //and add them all to map
+    //-------
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];//gain access to locationsArray in AppDelegate
+    
+    for (NSDictionary* item in appDelegate.locationsArray){
+        
+        MapAnnotation* annotation = [[MapAnnotation alloc] initWithName: [item valueForKey:@"name"] description:[item valueForKey:@"description"] imgPath: NULL imgTitle:NULL thumbPath:NULL latitude:[[item valueForKey:@"latitude"]doubleValue] longitude: [[item valueForKey:@"longitude"]doubleValue]];
+        
+        [self.mapView addAnnotation:annotation];
+    }
 }
-//------------
-//Method brings back to map view from detail view
-//triggered when back to map button pushed in detail view
-//specifically just before the segue is performed so:
-//
-//TODO: logic to determine which specific location
-//sent it so as to have that annotation on map and selected
-//------------
+
+
+
 - (IBAction)unwindFromDetail:(UIStoryboardSegue *)segue {
+    //------------
+    //Method brings back to map view from detail view
+    //triggered when back to map button pushed in detail view
+    //specifically just before the segue is performed so:
+    //
+    //TODO: logic to determine which specific location
+    //sent it so as to have that annotation on map and selected
+    //------------
     //segue.identifier
 }
+
+
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
@@ -97,8 +92,8 @@
     if ([annotation isKindOfClass:[MKUserLocation class]])
         return nil;
     
-    //only create for "expanded notation"
-    if ([annotation.title isEqual: @"Expanded Annotation"]){
+    //if annotation has title, create it
+    if (annotation.title){
         
         // If an existing pin view was not available, create one.
         //(creates one anyway right now just for examplary purposes)
@@ -107,29 +102,22 @@
         customPinView.animatesDrop = YES;
         
         //Add right callout button to custom pinView for segue to detail view:
-        //
-        UIButton *moreInfoButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        //[moreInfoButton addTarget:self action:@selector (moreInfoButtonPushed) forControlEvents: UIControlEventTouchUpInside];
+        //when pushed, calls mapView:annotationView:calloutAccessoryControlTapped:
         customPinView.canShowCallout = YES;
-        customPinView.rightCalloutAccessoryView = moreInfoButton;
+        customPinView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         
         return customPinView;
     }
     return nil;
 }
 
-//--------
-//method to trigger segue from map view to detail view
-//called when moreInfoButton pushed from an annotation
-//
-//!!!Consider replacing with next commented method!!!
-//--------
-/*- (void) moreInfoButtonPushed{
-    NSLog(@"moreInfoButton pushed!!!!");
-    [self performSegueWithIdentifier: @"toDetailView" sender:self];
-}*/
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+    //--------
+    //method to trigger segue from map view to detail view
+    //called when moreInfoButton pushed from an annotation
+    //
+    //--------
     
  NSLog(@"moreInfoButton pushed!!!!");
  [self performSegueWithIdentifier: @"toDetailView" sender:self];
@@ -137,9 +125,7 @@
 }
 
 
-
-
-- (void)didReceiveMemoryWarning
+-(void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -10,12 +10,26 @@
 
 @implementation MapAnnotation
 
--(id) initWithTitle:(NSString *) t subTitle: (NSString*) s coordinate:(CLLocationCoordinate2D) c
-{
-    self.title = t;
-    self.subTitle = s;
-    self.coordinate = c;
+
+
+-(id) initWithName:(NSString *)n description:(NSString *)d imgPath:(NSString *)imP imgTitle:(NSString *)imT thumbPath:(NSString *)thumbP latitude:(double)lat longitude:(double)lon{
+    
+    self.name = n;
+    self.description = d;
+    self.imgPath = imP;
+    self.imgTitle = imT;
+    self.thumbPath = thumbP;
+    
+    CLLocationCoordinate2D inputCoordinate;
+    inputCoordinate.latitude = lat;
+    inputCoordinate.longitude = lon;
+    self.coordinate = inputCoordinate;
+    
     return self;
+}
+
+-(NSString*) title {
+    return self.name;
 }
 
 @end

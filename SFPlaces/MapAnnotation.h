@@ -11,10 +11,17 @@
 
 @interface MapAnnotation : NSObject <MKAnnotation>
 
-@property (nonatomic, copy)  NSString *title;
-@property (nonatomic,copy) NSString *subTitle;
+@property (nonatomic, copy)  NSString *name;
+
+@property (nonatomic, copy)  NSString *imgPath;
+@property (nonatomic, copy)  NSString *thumbPath;
+@property (nonatomic, copy)  NSString *imgTitle;
+@property (nonatomic, copy)  NSString *description;
+//@property (nonatomic) double latitude;
+//@property (nonatomic) double longitude;
+
 @property (nonatomic) CLLocationCoordinate2D coordinate;
-    
--(id) initWithTitle: (NSString *) t subTitle: (NSString *) s coordinate: (CLLocationCoordinate2D) c;
+
+-(id) initWithName: (NSString *) n description: (NSString *) d imgPath: (NSString*) imP imgTitle: (NSString*) imT thumbPath: (NSString*) thumbP latitude: (double) lat longitude: (double) lon;
 
 @end

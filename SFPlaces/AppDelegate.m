@@ -13,6 +13,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //
+    //create MapAnnotation objects using data in JSON file
+    //
+    
+    //create NSData object with JSON file
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"locations" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    
+    //create an NSDictionary with one key, "locations" with the value being the array of location objects
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:NULL];    
+    
+    //create array of NSDictionaries, one for each location
+    NSArray *locations = [json valueForKeyPath:@"locations"];
+    self.locationsArray = locations;//sets class property for use by other classes
+    
+    //log dictionaries for each location to console to test
+    /*for (NSDictionary *item in locations) {
+        NSLog(@"name = %@", [item objectForKey:@"name"]);
+        NSLog(@"latitude = %@",[item objectForKey:@"latitude"]);
+        NSLog(@"description = %@", [item objectForKey:@"description"]);
+    }*/
+    
     return YES;
 }
 							
