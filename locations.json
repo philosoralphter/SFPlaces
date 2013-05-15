@@ -18,7 +18,18 @@
           "imgpath":"/sample/path",
           "imgtitle":"sample title",
           "thumbpath":"sample/thumb",
-     }
+     },
+     
+     {
+     "name":"Sutro Baths",
+     "latitude":"37.779806",
+     "longitude":"-122.513566",
+     "imgpath":"imgpath",
+     "subtitle":"subtitle",
+     "thumbpath":"thumbpath",
+     "description":"On a stroll through the Sutro Bath ruins, one-armed Uncle Victor (Charles Tyner) offers morose young Harold (Bud Cort) a lesson on the joys of military service in Harold and Maude. 'Only one thing kept going through my mind. Kill! Kill for Joe and Mack and all the rest of the guys! Kill!' The 1971 feature directed by Hal Ashby is one of the cinema's greatest dark comedies. Harold is obsessed with death until he meets 79 year-old free spirit Maude. Highlights include several fake suicide attempts Harold stages to horrify his guileless mother, played by Vivian Pickles. Ruth Gordon is total perfection as Maude. San Franciscans will also appreciate one scene that exquisitely documents the former landmark collection of makeshift sculpture that used to dot the mudflats near west bound I-80 and the Bay Bridge and was for many years considered a blight by some.
+                      -MisterSF.com",
+},
         
     ]
 }
