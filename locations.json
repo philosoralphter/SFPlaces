@@ -69,6 +69,186 @@
      "thumbpath":"thumbpath",
      "description":"Clarion Alley Mural Project (CAMP) is an artists' collective formed in October 1992 by a volunteer collective of six North Mission residents: Aaron Noble, Michael O'Connor, Sebastiana Pastor, Rigo 92, Mary Gail Snyder, and Aracely Soriano. The project creates and facilitates other artists creating murals on Clarion Alley, between Valencia and Mission Streets and surrounding areas. -Wikipedia",
       },
+      
+      {
+	"name":"Conservatory of Flowers",
+	"latitude":"37.772",
+	"longitude":"-122.460",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"Home to a collection of rare and exotic plants. Constructed in 1878, it is the oldest building in Golden Gate Park.",
+},
+
+{
+	"name":"Lombard Street",
+	"latitude":"37.801944",
+	"longitude":"-122.418889",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"A famous winding road with eight hairpin turns.",
+},
+
+{
+	"name":"Palace of Fine Arts",
+	"latitude":"37.802778",
+	"longitude":"-122.448333",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"A structure from the 1915 Panama-Pacific Exposition that exhibited works of art.",
+},
+
+{
+	"name":"Ferry Building",
+	"latitude":"37.7955",
+	"longitude":"-122.3937",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"A ferry terminal housing a large marketplace with many shops and restaurants.",
+},
+
+{
+	"name":"Golden Gate Park Windmills",
+	"latitude":"37.770732",
+	"longitude":"-122.509403",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"Two functionining windmills located in Golden Gate Park.",
+},
+
+{
+	"name":"Mission Dolores",
+	"latitude":"37.764389",
+	"longitude":"-122.427028",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"The oldest surviving structure in San Francisco.",
+},
+
+{
+	"name":"McElroy Octagon House",
+	"latitude":"37.797778",
+	"longitude":"-122.426389",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"An octagonal house built by William C. McElroy.",
+},
+
+{
+	"name":"Feusier Octagon House",
+	"latitude":"37.798333",
+	"longitude":"-122.415556",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"An octagonal house built by George Kenny.",
+},
+
+{
+	"name":"Ghiradelli Square",
+	"latitude":"37.805703",
+	"longitude":"-122.421794",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"A landmark with shops and restaurants. Located at Fisherman's Wharf.",
+},
+
+{
+	"name":"Columbus Tower",
+	"latitude":"37.7964",
+	"longitude":"-122.4049",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"A mixed-use building built in a copper-green Flatiron style.",
+},
+
+{
+	"name":"Wave Organ",
+	"latitude":"37.807087",
+	"longitude":"-122.438012",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"A collection of PVC pipes creating a musical instrument played by the waves.",
+},
+
+{
+	"name":"Neptune Society Columbarium",
+	"latitude":"37.780612",
+	"longitude":"-122.457072",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"The only non-denominational burial place in the city that is open to the public and has space available. Hopefully you won't need it, though.",
+},
+
+{
+	"name":"Audium",
+	"latitude":"37.788331",
+	"longitude":"-122.423923",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"A theater that pioneers the \"exploration of space in music\".",
+},
+
+{
+	"name":"Musee Mecanique",
+	"latitude":"37.809229",
+	"longitude":"-122.415901",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"A museum with an extensive collection of mechanically operated musical instruments and antique arcade machines.",
+},
+
+{
+	"name":"Coit Tower",
+	"latitude":"37.8025",
+	"longitude":"-122.405833",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"Offers great views of San Francisco.",
+},
+
+{
+	"name":"San Francisco Art Institute",
+	"latitude":"37.803456",
+	"longitude":"-122.417144",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"One of the oldest art schools in the United States. Hosts public events and exhibits.",
+},
+
+{
+	"name":"California Academy of Sciences",
+	"latitude":"37.770100",
+	"longitude":"-122.466407",
+	"imgpath":"imgpath",
+	"subtitle":"subtitle",
+	"thumbpath":"thumbpath",
+	"description":"A museum of natural history. One of the largest in the world.",
+},
+
+{
+	"name":"Metreon",
+	"latitude":"37.784374",
+	"longitude":"-122.403424",
+	"imgpath":"imgpath",
+	"subtitle":"Spend away!",
+	"thumbpath":"thumbpath",
+	"description":"A shopping center with many dining and entertainment options, including a theater.",
+},
         
     ]
 }
