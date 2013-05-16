@@ -44,13 +44,12 @@
                                     <constraint firstAttribute="width" constant="185" id="gqk-1p-8tc"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgp-5g-20B">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgp-5g-20B">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="OT1-ZV-yhU"/>
                                     <constraint firstAttribute="width" constant="240" id="lah-w2-tl0"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -70,23 +69,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kgp-5g-20B" firstAttribute="centerX" secondItem="Dha-3Z-0nU" secondAttribute="centerX" type="default" id="7a0-4F-dy2"/>
                             <constraint firstItem="LM9-LM-kEc" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="6" id="BMX-f7-y2H"/>
-                            <constraint firstItem="LM9-LM-kEc" firstAttribute="centerX" secondItem="rU2-oE-9Fi" secondAttribute="centerX" type="default" id="CSC-yP-UTQ"/>
-                            <constraint firstItem="Dha-3Z-0nU" firstAttribute="leading" secondItem="rU2-oE-9Fi" secondAttribute="leading" constant="7" id="Ng1-5n-iYc"/>
-                            <constraint firstItem="nDv-r5-Blg" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="28" id="OMO-Pu-Yed"/>
-                            <constraint firstItem="Dha-3Z-0nU" firstAttribute="top" secondItem="LM9-LM-kEc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QJW-2y-aqD"/>
-                            <constraint firstAttribute="trailing" secondItem="nDv-r5-Blg" secondAttribute="trailing" constant="6" id="tNn-P1-VBg"/>
-                            <constraint firstItem="kgp-5g-20B" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="183" id="w3t-di-GQM"/>
-                            <constraint firstItem="kgp-5g-20B" firstAttribute="centerX" secondItem="LM9-LM-kEc" secondAttribute="centerX" type="default" id="wpa-oO-CeA"/>
+                            <constraint firstItem="kgp-5g-20B" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="176" id="Jgy-Go-gFW"/>
+                            <constraint firstItem="LM9-LM-kEc" firstAttribute="centerX" secondItem="nDv-r5-Blg" secondAttribute="centerX" type="default" id="OeR-mu-HCf"/>
+                            <constraint firstItem="nDv-r5-Blg" firstAttribute="centerX" secondItem="rU2-oE-9Fi" secondAttribute="centerX" type="default" id="TgA-eW-OMr"/>
+                            <constraint firstItem="Dha-3Z-0nU" firstAttribute="top" secondItem="LM9-LM-kEc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Wf7-5r-kdG"/>
+                            <constraint firstItem="nDv-r5-Blg" firstAttribute="top" secondItem="kgp-5g-20B" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="d0z-2D-0fl"/>
+                            <constraint firstItem="kgp-5g-20B" firstAttribute="leading" secondItem="rU2-oE-9Fi" secondAttribute="leading" constant="45" id="ytR-yU-XCC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Details" id="5Fs-If-HDK">
-                        <barButtonItem key="rightBarButtonItem" title="To Map" id="qrj-kS-DPW">
-                            <connections>
-                                <segue destination="0oj-ea-hht" kind="unwind" unwindAction="unwindFromDetail:" id="fu0-dz-k2n"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Details" id="5Fs-If-HDK"/>
+                    <connections>
+                        <outlet property="descriptionText" destination="kgp-5g-20B" id="ULT-op-7Kz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFj-T8-6ru" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0oj-ea-hht" userLabel="Exit" sceneMemberID="exit"/>
