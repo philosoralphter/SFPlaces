@@ -1,21 +1,12 @@
 {
     "locations": [
-     {
-          "name":"Sample",
-          "latitude":"37.72529",
-          "longitude":"-122.451151",
-          "description":"This sample is a the lat/long for CCSF",
-          "imgpath":"/sample/path",
-          "imgtitle":"sample title",
-          "thumbpath":"sample/thumb",
-     },
      
      {
           "name":"Osama Bin Laden's Condo",
           "latitude":"37.791447",
           "longitude":"-122.413407",
           "description":"Osama Bin Laden lived here in the 1970's when he was a rich Saudi playboy",
-          "imgpath":"/sample/path",
+          "imgpath":"/images/Osama Bin Laden's Condo.png",
           "imgtitle":"sample title",
           "thumbpath":"sample/thumb",
      },
