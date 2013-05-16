@@ -59,6 +59,16 @@
      "thumbpath":"thumbpath",
      "description":"Inside the historic Cable Car Barn & Powerhouse, visitors can view the actual cable winding machinery from an elevated gallery, as well as the path of the cable entering the building and leaving underneath the street in the sheave room viewing area.  Also on display are various mechanical devices, such as grips, track, trucks, cable and brake mechanisms with corresponding explanations.",
       },
+      
+      {
+     "name":"Clarion Alley",
+     "latitude":"37.762971",
+     "longitude":"-122.420622",
+     "imgpath":"imgpath",
+     "subtitle":"subtitle",
+     "thumbpath":"thumbpath",
+     "description":"Clarion Alley Mural Project (CAMP) is an artists' collective formed in October 1992 by a volunteer collective of six North Mission residents: Aaron Noble, Michael O'Connor, Sebastiana Pastor, Rigo 92, Mary Gail Snyder, and Aracely Soriano. The project creates and facilitates other artists creating murals on Clarion Alley, between Valencia and Mission Streets and surrounding areas. -Wikipedia",
+      },
         
     ]
 }
