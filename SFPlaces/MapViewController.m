@@ -86,7 +86,7 @@
         customPinView.pinColor = MKPinAnnotationColorGreen;
         customPinView.animatesDrop = YES;
         
-        //Add right callout button to custom pinView for segue to detail view:
+        //Add right callout button to custom pinView for segue to detail view
         //when pushed, calls mapView:annotationView:calloutAccessoryControlTapped:
         customPinView.canShowCallout = YES;
         customPinView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
