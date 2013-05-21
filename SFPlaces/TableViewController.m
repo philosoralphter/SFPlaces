@@ -7,8 +7,11 @@
 //
 
 #import "TableViewController.h"
+#import "DetailViewController.h"
 
 @interface TableViewController ()
+
+@property (nonatomic, assign) NSInteger indexSelected;
 
 @end
 
@@ -67,6 +70,30 @@
     return cell;
 }
 
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Remember the index
+    self.indexSelected = indexPath.row;
+    
+    // Instigate the segue
+    [self performSegueWithIdentifier: @"tableToDetailSegue" sender: self];
+}
+
+
+#pragma mark - Segue Methods
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // This method is called after the destination view controller is created
+    //After tableView:didSelectRowAtIndexPath:
+    
+    DetailViewController* detail = segue.destinationViewController;
+    
+    // Give the detail view controller the NSDictionary object of the location for the selected cell
+    detail.selectedLocationDictionary = [self.model objectAtIndex: self.indexSelected];
+}
 
 - (void)didReceiveMemoryWarning
 {

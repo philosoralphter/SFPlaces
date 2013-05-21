@@ -19,11 +19,12 @@
     return self;
 }
 
-/*-(id)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier{
+-(id)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier{
     self.annotation = annotation;
-    self.setR = reuseIdentifier;
+    
+    return self;
 }
-*/
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

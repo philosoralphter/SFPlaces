@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @interface DetailViewController ()
 
@@ -14,7 +15,6 @@
 
 @implementation DetailViewController
 
-@synthesize descriptionText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,9 +28,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
- ;
-	descriptionText.text = @"Everything Ok";
+    //----------
+    //Populate detail view with appropriate location data:
+    
+    //Title bar:
+	self.title = [self.selectedLocationDictionary valueForKey: @"name"];
+    
+    //Title Label
+    self.titleLabel.text = [self.selectedLocationDictionary valueForKey: @"name"];
+    
+    //Image
+    UIImageView *myImageView = [[UIImageView alloc] init];
+    myImageView.image = [UIImage imageNamed:[self.selectedLocationDictionary valueForKey: @"imgpath"]];
+    self.imageDisplayed.image = myImageView.image;
+    
+    //Description Text
+    self.descriptionText.text = [self.selectedLocationDictionary valueForKey: @"description"];
+    
+    //---------------
+    
 }
+
 
 - (void)didReceiveMemoryWarning
 {

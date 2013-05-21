@@ -18,6 +18,11 @@
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic)NSDictionary *dictionaryOfSelectedAnnotation;
+
+//gain access to locationsArray in AppDelegate
+@property (strong, nonatomic) AppDelegate *appDelegate;
+
 
 - (IBAction)unwindFromDetail:(UIStoryboardSegue *)segue;
 

@@ -8,22 +8,15 @@
 
 #import "MapViewController.h"
 #import "MapToDetailSegue.h"
-
+#import "DetailViewController.h"
 
 
 @interface MapViewController ()
 
+
 @end
 
 @implementation MapViewController
-//
-//attempted to use this method to provide better behavior than mapView:didUpdateUserLocation:
-//this zoomed to random place in ocean presumably because user locaion was not yet "updaed"
-//
-/*-(void)viewWillAppear:(BOOL)animated{
-    MKCoordinateRegion currentRegion = MKCoordinateRegionMakeWithDistance(self.mapView.userLocation.coordinate, 10000, 10000);
-    [self.mapView setRegion:currentRegion animated:YES];
-}*/
 
 - (void)viewDidLoad
 {
@@ -46,7 +39,7 @@
     
     //create custom MapAnotations using custom init method
     for (NSDictionary* item in appDelegate.locationsArray){
-        MapAnnotation* annotation = [[MapAnnotation alloc] initWithName: [item valueForKey:@"name"] description:[item valueForKey:@"description"] imgPath: NULL imgTitle:NULL thumbPath:NULL latitude:[[item valueForKey:@"latitude"]doubleValue] longitude: [[item valueForKey:@"longitude"]doubleValue]];
+        MapAnnotation* annotation = [[MapAnnotation alloc] initWithDictionary: item];
         
         [self.mapView addAnnotation:annotation];
     }
@@ -101,12 +94,33 @@
     //--------
     //method to trigger segue from map view to detail view
     //called when moreInfoButton pushed from an annotation
-    //
     //--------
+    NSLog(@"moreInfoButton pushed!!!!");
     
- NSLog(@"moreInfoButton pushed!!!!");
- [self performSegueWithIdentifier: @"toDetailView" sender:self];
+    //*******
+    //Find and save the NSDictionary object of the location for the selected annotation to give to the detail view controller
+    
+    //gain access to locationsArray in AppDelegate:
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    //loop through dictionaries to find identifier match and set to class property
+    for (NSDictionary* item in appDelegate.locationsArray){
+        if ([[item valueForKey:@"name"] isEqualToString: view.annotation.title]){
+            self.dictionaryOfSelectedAnnotation = item;
+        }
+    }
+    //*********
+    
+    [self performSegueWithIdentifier: @"mapToDetailView" sender:self];
  
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    DetailViewController* detail = segue.destinationViewController;
+    
+    // Give the detail view controller the NSDictionary object of the location for the selected annotation
+    detail.selectedLocationDictionary = self.dictionaryOfSelectedAnnotation;
 }
 
 - (IBAction)unwindFromDetail:(UIStoryboardSegue *)segue {

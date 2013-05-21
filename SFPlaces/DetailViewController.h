@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController {
-    UITextView *descriptionText;
-}
+@interface DetailViewController :UIViewController
 
+
+@property NSDictionary *selectedLocationDictionary;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (nonatomic, retain) IBOutlet UITextView *descriptionText;
+@property (weak, nonatomic) IBOutlet UIImageView *imageDisplayed;
+
 @end

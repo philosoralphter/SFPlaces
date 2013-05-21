@@ -36,13 +36,32 @@
 		DEA6DF78172891B7007FBE0F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF30AE172756ED000EBC60 /* MapKit.framework */; };
 		DEAF30AF172756ED000EBC60 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF30AE172756ED000EBC60 /* MapKit.framework */; };
 		DEAF30B1172756F7000EBC60 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF30B0172756F7000EBC60 /* CoreLocation.framework */; };
-		DEE9A03C17484DEF004F7AEC /* Cable Car Barn.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A03517484DEF004F7AEC /* Cable Car Barn.png */; };
-		DEE9A03D17484DEF004F7AEC /* City Lights Books.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A03617484DEF004F7AEC /* City Lights Books.png */; };
-		DEE9A03E17484DEF004F7AEC /* Clarion Alley.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A03717484DEF004F7AEC /* Clarion Alley.png */; };
-		DEE9A03F17484DEF004F7AEC /* Osama Bin Laden's Condo.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A03817484DEF004F7AEC /* Osama Bin Laden's Condo.png */; };
-		DEE9A04017484DEF004F7AEC /* readme in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A03917484DEF004F7AEC /* readme */; };
-		DEE9A04117484DEF004F7AEC /* Sutro Baths.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A03A17484DEF004F7AEC /* Sutro Baths.png */; };
-		DEE9A04217484DEF004F7AEC /* Tommy's Joynt.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A03B17484DEF004F7AEC /* Tommy's Joynt.png */; };
+		DEE9A093174B05C8004F7AEC /* Audium.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A079174B05C8004F7AEC /* Audium.png */; };
+		DEE9A094174B05C8004F7AEC /* Cable Car Barn.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A07A174B05C8004F7AEC /* Cable Car Barn.png */; };
+		DEE9A095174B05C8004F7AEC /* California Academy of Sciences.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A07B174B05C8004F7AEC /* California Academy of Sciences.png */; };
+		DEE9A096174B05C8004F7AEC /* City Lights Books.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A07C174B05C8004F7AEC /* City Lights Books.png */; };
+		DEE9A097174B05C8004F7AEC /* Clarion Alley.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A07D174B05C8004F7AEC /* Clarion Alley.png */; };
+		DEE9A098174B05C8004F7AEC /* Coit Tower.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A07E174B05C8004F7AEC /* Coit Tower.png */; };
+		DEE9A099174B05C8004F7AEC /* Columbus Tower.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A07F174B05C8004F7AEC /* Columbus Tower.png */; };
+		DEE9A09A174B05C8004F7AEC /* Conservatory of Flowers.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A080174B05C8004F7AEC /* Conservatory of Flowers.png */; };
+		DEE9A09B174B05C8004F7AEC /* Ferry Building.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A081174B05C8004F7AEC /* Ferry Building.png */; };
+		DEE9A09C174B05C8004F7AEC /* Feusier Octagon House.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A082174B05C8004F7AEC /* Feusier Octagon House.png */; };
+		DEE9A09D174B05C8004F7AEC /* Ghiradelli Square.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A083174B05C8004F7AEC /* Ghiradelli Square.png */; };
+		DEE9A09E174B05C8004F7AEC /* Golden Fire Hydrant.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A084174B05C8004F7AEC /* Golden Fire Hydrant.png */; };
+		DEE9A09F174B05C8004F7AEC /* Golden Gate Park Windmills.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A085174B05C8004F7AEC /* Golden Gate Park Windmills.png */; };
+		DEE9A0A0174B05C8004F7AEC /* Lombard Street.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A086174B05C8004F7AEC /* Lombard Street.png */; };
+		DEE9A0A1174B05C8004F7AEC /* McElroy Octagon House.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A087174B05C8004F7AEC /* McElroy Octagon House.png */; };
+		DEE9A0A2174B05C8004F7AEC /* Metreon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A088174B05C8004F7AEC /* Metreon.png */; };
+		DEE9A0A3174B05C8004F7AEC /* Mission Dolores.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A089174B05C8004F7AEC /* Mission Dolores.png */; };
+		DEE9A0A4174B05C8004F7AEC /* Musee Mecanique.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A08A174B05C8004F7AEC /* Musee Mecanique.png */; };
+		DEE9A0A5174B05C8004F7AEC /* Neptune Society Columbarium.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A08B174B05C8004F7AEC /* Neptune Society Columbarium.png */; };
+		DEE9A0A6174B05C8004F7AEC /* Osama Bin Laden's Condo.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A08C174B05C8004F7AEC /* Osama Bin Laden's Condo.png */; };
+		DEE9A0A7174B05C8004F7AEC /* Palace of Fine Arts.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A08D174B05C8004F7AEC /* Palace of Fine Arts.png */; };
+		DEE9A0A8174B05C8004F7AEC /* readme in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A08E174B05C8004F7AEC /* readme */; };
+		DEE9A0A9174B05C8004F7AEC /* San Francisco Art Institute.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A08F174B05C8004F7AEC /* San Francisco Art Institute.png */; };
+		DEE9A0AA174B05C8004F7AEC /* Sutro Baths.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A090174B05C8004F7AEC /* Sutro Baths.png */; };
+		DEE9A0AB174B05C8004F7AEC /* Tommy's Joynt.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A091174B05C8004F7AEC /* Tommy's Joynt.png */; };
+		DEE9A0AC174B05C8004F7AEC /* Wave Organ.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE9A092174B05C8004F7AEC /* Wave Organ.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,13 +114,32 @@
 		DEA6DF761728914F007FBE0F /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 		DEAF30AE172756ED000EBC60 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DEAF30B0172756F7000EBC60 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		DEE9A03517484DEF004F7AEC /* Cable Car Barn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cable Car Barn.png"; sourceTree = "<group>"; };
-		DEE9A03617484DEF004F7AEC /* City Lights Books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "City Lights Books.png"; sourceTree = "<group>"; };
-		DEE9A03717484DEF004F7AEC /* Clarion Alley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clarion Alley.png"; sourceTree = "<group>"; };
-		DEE9A03817484DEF004F7AEC /* Osama Bin Laden's Condo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Osama Bin Laden's Condo.png"; sourceTree = "<group>"; };
-		DEE9A03917484DEF004F7AEC /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
-		DEE9A03A17484DEF004F7AEC /* Sutro Baths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sutro Baths.png"; sourceTree = "<group>"; };
-		DEE9A03B17484DEF004F7AEC /* Tommy's Joynt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tommy's Joynt.png"; sourceTree = "<group>"; };
+		DEE9A079174B05C8004F7AEC /* Audium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Audium.png; sourceTree = "<group>"; };
+		DEE9A07A174B05C8004F7AEC /* Cable Car Barn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cable Car Barn.png"; sourceTree = "<group>"; };
+		DEE9A07B174B05C8004F7AEC /* California Academy of Sciences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "California Academy of Sciences.png"; sourceTree = "<group>"; };
+		DEE9A07C174B05C8004F7AEC /* City Lights Books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "City Lights Books.png"; sourceTree = "<group>"; };
+		DEE9A07D174B05C8004F7AEC /* Clarion Alley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clarion Alley.png"; sourceTree = "<group>"; };
+		DEE9A07E174B05C8004F7AEC /* Coit Tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coit Tower.png"; sourceTree = "<group>"; };
+		DEE9A07F174B05C8004F7AEC /* Columbus Tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Columbus Tower.png"; sourceTree = "<group>"; };
+		DEE9A080174B05C8004F7AEC /* Conservatory of Flowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Conservatory of Flowers.png"; sourceTree = "<group>"; };
+		DEE9A081174B05C8004F7AEC /* Ferry Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ferry Building.png"; sourceTree = "<group>"; };
+		DEE9A082174B05C8004F7AEC /* Feusier Octagon House.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feusier Octagon House.png"; sourceTree = "<group>"; };
+		DEE9A083174B05C8004F7AEC /* Ghiradelli Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ghiradelli Square.png"; sourceTree = "<group>"; };
+		DEE9A084174B05C8004F7AEC /* Golden Fire Hydrant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Golden Fire Hydrant.png"; sourceTree = "<group>"; };
+		DEE9A085174B05C8004F7AEC /* Golden Gate Park Windmills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Golden Gate Park Windmills.png"; sourceTree = "<group>"; };
+		DEE9A086174B05C8004F7AEC /* Lombard Street.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lombard Street.png"; sourceTree = "<group>"; };
+		DEE9A087174B05C8004F7AEC /* McElroy Octagon House.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McElroy Octagon House.png"; sourceTree = "<group>"; };
+		DEE9A088174B05C8004F7AEC /* Metreon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Metreon.png; sourceTree = "<group>"; };
+		DEE9A089174B05C8004F7AEC /* Mission Dolores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mission Dolores.png"; sourceTree = "<group>"; };
+		DEE9A08A174B05C8004F7AEC /* Musee Mecanique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Musee Mecanique.png"; sourceTree = "<group>"; };
+		DEE9A08B174B05C8004F7AEC /* Neptune Society Columbarium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Neptune Society Columbarium.png"; sourceTree = "<group>"; };
+		DEE9A08C174B05C8004F7AEC /* Osama Bin Laden's Condo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Osama Bin Laden's Condo.png"; sourceTree = "<group>"; };
+		DEE9A08D174B05C8004F7AEC /* Palace of Fine Arts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Palace of Fine Arts.png"; sourceTree = "<group>"; };
+		DEE9A08E174B05C8004F7AEC /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		DEE9A08F174B05C8004F7AEC /* San Francisco Art Institute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "San Francisco Art Institute.png"; sourceTree = "<group>"; };
+		DEE9A090174B05C8004F7AEC /* Sutro Baths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sutro Baths.png"; sourceTree = "<group>"; };
+		DEE9A091174B05C8004F7AEC /* Tommy's Joynt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tommy's Joynt.png"; sourceTree = "<group>"; };
+		DEE9A092174B05C8004F7AEC /* Wave Organ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wave Organ.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +221,7 @@
 		DE6B713A172220F300E53A23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DEE9A03417484DEF004F7AEC /* images */,
+				DEE9A078174B05C7004F7AEC /* images */,
 				DE4509CF173B498F000FC8B9 /* locations.json */,
 				DE6B7151172220F300E53A23 /* first.png */,
 				DE6B7153172220F300E53A23 /* first@2x.png */,
@@ -225,16 +263,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DEE9A03417484DEF004F7AEC /* images */ = {
+		DEE9A078174B05C7004F7AEC /* images */ = {
 			isa = PBXGroup;
 			children = (
-				DEE9A03517484DEF004F7AEC /* Cable Car Barn.png */,
-				DEE9A03617484DEF004F7AEC /* City Lights Books.png */,
-				DEE9A03717484DEF004F7AEC /* Clarion Alley.png */,
-				DEE9A03817484DEF004F7AEC /* Osama Bin Laden's Condo.png */,
-				DEE9A03917484DEF004F7AEC /* readme */,
-				DEE9A03A17484DEF004F7AEC /* Sutro Baths.png */,
-				DEE9A03B17484DEF004F7AEC /* Tommy's Joynt.png */,
+				DEE9A079174B05C8004F7AEC /* Audium.png */,
+				DEE9A07A174B05C8004F7AEC /* Cable Car Barn.png */,
+				DEE9A07B174B05C8004F7AEC /* California Academy of Sciences.png */,
+				DEE9A07C174B05C8004F7AEC /* City Lights Books.png */,
+				DEE9A07D174B05C8004F7AEC /* Clarion Alley.png */,
+				DEE9A07E174B05C8004F7AEC /* Coit Tower.png */,
+				DEE9A07F174B05C8004F7AEC /* Columbus Tower.png */,
+				DEE9A080174B05C8004F7AEC /* Conservatory of Flowers.png */,
+				DEE9A081174B05C8004F7AEC /* Ferry Building.png */,
+				DEE9A082174B05C8004F7AEC /* Feusier Octagon House.png */,
+				DEE9A083174B05C8004F7AEC /* Ghiradelli Square.png */,
+				DEE9A084174B05C8004F7AEC /* Golden Fire Hydrant.png */,
+				DEE9A085174B05C8004F7AEC /* Golden Gate Park Windmills.png */,
+				DEE9A086174B05C8004F7AEC /* Lombard Street.png */,
+				DEE9A087174B05C8004F7AEC /* McElroy Octagon House.png */,
+				DEE9A088174B05C8004F7AEC /* Metreon.png */,
+				DEE9A089174B05C8004F7AEC /* Mission Dolores.png */,
+				DEE9A08A174B05C8004F7AEC /* Musee Mecanique.png */,
+				DEE9A08B174B05C8004F7AEC /* Neptune Society Columbarium.png */,
+				DEE9A08C174B05C8004F7AEC /* Osama Bin Laden's Condo.png */,
+				DEE9A08D174B05C8004F7AEC /* Palace of Fine Arts.png */,
+				DEE9A08E174B05C8004F7AEC /* readme */,
+				DEE9A08F174B05C8004F7AEC /* San Francisco Art Institute.png */,
+				DEE9A090174B05C8004F7AEC /* Sutro Baths.png */,
+				DEE9A091174B05C8004F7AEC /* Tommy's Joynt.png */,
+				DEE9A092174B05C8004F7AEC /* Wave Organ.png */,
 			);
 			path = images;
 			sourceTree = SOURCE_ROOT;
@@ -320,13 +377,32 @@
 				DE6B7159172220F300E53A23 /* second.png in Resources */,
 				DE6B715B172220F300E53A23 /* second@2x.png in Resources */,
 				DE4509D0173B498F000FC8B9 /* locations.json in Resources */,
-				DEE9A03C17484DEF004F7AEC /* Cable Car Barn.png in Resources */,
-				DEE9A03D17484DEF004F7AEC /* City Lights Books.png in Resources */,
-				DEE9A03E17484DEF004F7AEC /* Clarion Alley.png in Resources */,
-				DEE9A03F17484DEF004F7AEC /* Osama Bin Laden's Condo.png in Resources */,
-				DEE9A04017484DEF004F7AEC /* readme in Resources */,
-				DEE9A04117484DEF004F7AEC /* Sutro Baths.png in Resources */,
-				DEE9A04217484DEF004F7AEC /* Tommy's Joynt.png in Resources */,
+				DEE9A093174B05C8004F7AEC /* Audium.png in Resources */,
+				DEE9A094174B05C8004F7AEC /* Cable Car Barn.png in Resources */,
+				DEE9A095174B05C8004F7AEC /* California Academy of Sciences.png in Resources */,
+				DEE9A096174B05C8004F7AEC /* City Lights Books.png in Resources */,
+				DEE9A097174B05C8004F7AEC /* Clarion Alley.png in Resources */,
+				DEE9A098174B05C8004F7AEC /* Coit Tower.png in Resources */,
+				DEE9A099174B05C8004F7AEC /* Columbus Tower.png in Resources */,
+				DEE9A09A174B05C8004F7AEC /* Conservatory of Flowers.png in Resources */,
+				DEE9A09B174B05C8004F7AEC /* Ferry Building.png in Resources */,
+				DEE9A09C174B05C8004F7AEC /* Feusier Octagon House.png in Resources */,
+				DEE9A09D174B05C8004F7AEC /* Ghiradelli Square.png in Resources */,
+				DEE9A09E174B05C8004F7AEC /* Golden Fire Hydrant.png in Resources */,
+				DEE9A09F174B05C8004F7AEC /* Golden Gate Park Windmills.png in Resources */,
+				DEE9A0A0174B05C8004F7AEC /* Lombard Street.png in Resources */,
+				DEE9A0A1174B05C8004F7AEC /* McElroy Octagon House.png in Resources */,
+				DEE9A0A2174B05C8004F7AEC /* Metreon.png in Resources */,
+				DEE9A0A3174B05C8004F7AEC /* Mission Dolores.png in Resources */,
+				DEE9A0A4174B05C8004F7AEC /* Musee Mecanique.png in Resources */,
+				DEE9A0A5174B05C8004F7AEC /* Neptune Society Columbarium.png in Resources */,
+				DEE9A0A6174B05C8004F7AEC /* Osama Bin Laden's Condo.png in Resources */,
+				DEE9A0A7174B05C8004F7AEC /* Palace of Fine Arts.png in Resources */,
+				DEE9A0A8174B05C8004F7AEC /* readme in Resources */,
+				DEE9A0A9174B05C8004F7AEC /* San Francisco Art Institute.png in Resources */,
+				DEE9A0AA174B05C8004F7AEC /* Sutro Baths.png in Resources */,
+				DEE9A0AB174B05C8004F7AEC /* Tommy's Joynt.png in Resources */,
+				DEE9A0AC174B05C8004F7AEC /* Wave Organ.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

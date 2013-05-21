@@ -17,10 +17,13 @@
 @property (nonatomic, copy)  NSString *thumbPath;
 @property (nonatomic, copy)  NSString *imgTitle;
 @property (nonatomic, copy)  NSString *description;
-//@property (nonatomic) double latitude;
-//@property (nonatomic) double longitude;
-
 @property (nonatomic) CLLocationCoordinate2D coordinate;
+
+@property NSDictionary *sourceDictionary;
+
+
+
+-(id)initWithDictionary: (NSDictionary*) sourceDict;
 
 -(id) initWithName: (NSString *) n description: (NSString *) d imgPath: (NSString*) imP imgTitle: (NSString*) imT thumbPath: (NSString*) thumbP latitude: (double) lat longitude: (double) lon;
 

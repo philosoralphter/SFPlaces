@@ -18,7 +18,7 @@
                     <tabBarItem key="tabBarItem" title="Map" image="first" id="7"/>
                     <connections>
                         <outlet property="mapView" destination="yWv-hd-TtI" id="OxN-aa-DS9"/>
-                        <segue destination="oaE-Fo-QUn" kind="modal" identifier="toDetailView" customClass="MapToDetailSegue" modalTransitionStyle="flipHorizontal" id="Eqo-b5-3HC"/>
+                        <segue destination="oaE-Fo-QUn" kind="modal" identifier="mapToDetailView" customClass="MapToDetailSegue" modalTransitionStyle="flipHorizontal" id="Eqo-b5-3HC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
@@ -33,29 +33,32 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Example Detail View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LM9-LM-kEc">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-3Z-0nU">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="118" id="Nqe-Fv-Vhr"/>
-                                    <constraint firstAttribute="width" constant="185" id="gqk-1p-8tc"/>
+                                    <constraint firstAttribute="width" constant="322" id="sRu-Cq-oY4"/>
+                                    <constraint firstAttribute="height" constant="118" id="yOV-UT-Ikp"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgp-5g-20B">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="OT1-ZV-yhU"/>
-                                    <constraint firstAttribute="width" constant="240" id="lah-w2-tl0"/>
+                                    <constraint firstAttribute="height" constant="203" id="Ss5-P0-pHf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDv-r5-Blg">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2F-Qu-GO1">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncv-LI-oe4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Dgn-mA-SjS"/>
+                                    <constraint firstAttribute="width" constant="48" id="GYK-Hm-dy4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Back to map">
+                                <state key="normal" title="Back">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -63,25 +66,29 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0oj-ea-hht" kind="unwind" unwindAction="unwindFromDetail:" id="tWI-9F-VI0"/>
+                                    <segue destination="0oj-ea-hht" kind="unwind" unwindAction="unwindFromDetail:" id="pKD-lD-ELs"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kgp-5g-20B" firstAttribute="centerX" secondItem="Dha-3Z-0nU" secondAttribute="centerX" type="default" id="7a0-4F-dy2"/>
-                            <constraint firstItem="LM9-LM-kEc" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="6" id="BMX-f7-y2H"/>
-                            <constraint firstItem="kgp-5g-20B" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="176" id="Jgy-Go-gFW"/>
-                            <constraint firstItem="LM9-LM-kEc" firstAttribute="centerX" secondItem="nDv-r5-Blg" secondAttribute="centerX" type="default" id="OeR-mu-HCf"/>
-                            <constraint firstItem="nDv-r5-Blg" firstAttribute="centerX" secondItem="rU2-oE-9Fi" secondAttribute="centerX" type="default" id="TgA-eW-OMr"/>
-                            <constraint firstItem="Dha-3Z-0nU" firstAttribute="top" secondItem="LM9-LM-kEc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Wf7-5r-kdG"/>
-                            <constraint firstItem="nDv-r5-Blg" firstAttribute="top" secondItem="kgp-5g-20B" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="d0z-2D-0fl"/>
-                            <constraint firstItem="kgp-5g-20B" firstAttribute="leading" secondItem="rU2-oE-9Fi" secondAttribute="leading" constant="45" id="ytR-yU-XCC"/>
+                            <constraint firstItem="Dha-3Z-0nU" firstAttribute="top" secondItem="J2F-Qu-GO1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="226-Rp-C1a"/>
+                            <constraint firstItem="J2F-Qu-GO1" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="12" id="7Ta-Kb-IaX"/>
+                            <constraint firstItem="Ncv-LI-oe4" firstAttribute="baseline" secondItem="J2F-Qu-GO1" secondAttribute="baseline" type="default" id="AhO-vv-bT7"/>
+                            <constraint firstItem="kgp-5g-20B" firstAttribute="leading" secondItem="rU2-oE-9Fi" secondAttribute="leading" type="default" id="B0l-FU-axk"/>
+                            <constraint firstItem="Dha-3Z-0nU" firstAttribute="leading" secondItem="rU2-oE-9Fi" secondAttribute="leading" type="default" id="ETz-Y6-Llr"/>
+                            <constraint firstItem="kgp-5g-20B" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" constant="166" id="GSm-3E-tPR"/>
+                            <constraint firstItem="Ncv-LI-oe4" firstAttribute="trailing" secondItem="rU2-oE-9Fi" secondAttribute="trailing" type="default" id="KQE-5s-swY"/>
+                            <constraint firstItem="J2F-Qu-GO1" firstAttribute="centerX" secondItem="kgp-5g-20B" secondAttribute="centerX" type="default" id="bN1-Iw-mcg"/>
+                            <constraint firstItem="kgp-5g-20B" firstAttribute="trailing" secondItem="rU2-oE-9Fi" secondAttribute="trailing" type="default" id="x3H-x0-DW7"/>
+                            <constraint firstItem="Ncv-LI-oe4" firstAttribute="top" secondItem="rU2-oE-9Fi" secondAttribute="top" type="default" id="xCY-nA-U0P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="5Fs-If-HDK"/>
                     <connections>
                         <outlet property="descriptionText" destination="kgp-5g-20B" id="ULT-op-7Kz"/>
+                        <outlet property="imageDisplayed" destination="Dha-3Z-0nU" id="4mD-9m-j4t"/>
+                        <outlet property="titleLabel" destination="J2F-Qu-GO1" id="cwh-4Q-MeE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFj-T8-6ru" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -89,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="1417" y="-96"/>
         </scene>
-        <!--Table View Controller - San Francisco Places-->
+        <!--Table View Controller - Places-->
         <scene sceneID="oZD-fv-dfN">
             <objects>
                 <tableViewController id="jbf-fZ-opl" customClass="TableViewController" sceneMemberID="viewController">
@@ -106,13 +113,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <connections>
-                                    <segue destination="oaE-Fo-QUn" kind="push" id="WRr-6Y-Uid"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="San Francisco Places" id="E5e-pE-cxG"/>
+                    <navigationItem key="navigationItem" title="Places" id="E5e-pE-cxG"/>
+                    <connections>
+                        <segue destination="oaE-Fo-QUn" kind="push" identifier="tableToDetailSegue" id="ePq-KT-B8K"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W98-Fz-an7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,12 +166,38 @@
         <image name="first" width="16" height="16"/>
         <image name="second.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="descriptionText" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="imageDisplayed" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="unwindFromDetail:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="WRr-6Y-Uid"/>
+        <segue reference="ePq-KT-B8K"/>
     </inferredMetricsTieBreakers>
 </document>

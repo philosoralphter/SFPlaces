@@ -12,6 +12,14 @@
 
 
 
+-(id)initWithDictionary: (NSDictionary*) sourceDict{
+    self.sourceDictionary = sourceDict;
+    
+    self = [self initWithName: [sourceDict valueForKey:@"name"] description:[sourceDict valueForKey:@"description"] imgPath: NULL imgTitle:NULL thumbPath:NULL latitude:[[sourceDict valueForKey:@"latitude"]doubleValue] longitude: [[sourceDict valueForKey:@"longitude"]doubleValue]];
+    
+    return self;
+}
+
 -(id) initWithName:(NSString *)n description:(NSString *)d imgPath:(NSString *)imP imgTitle:(NSString *)imT thumbPath:(NSString *)thumbP latitude:(double)lat longitude:(double)lon{
     
     self.name = n;
