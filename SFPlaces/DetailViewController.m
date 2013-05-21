@@ -49,6 +49,13 @@
     
 }
 
+/*-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    DetailViewController* map = segue.destinationViewController;
+
+    // Give the map view controller the NSDictionary object of the location in the selected detail page
+    map.dictionaryOfSelectedAnnotation = self.selectedLocationDictionary;
+    
+}*/
 
 - (void)didReceiveMemoryWarning
 {

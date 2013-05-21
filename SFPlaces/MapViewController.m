@@ -84,6 +84,11 @@
         customPinView.canShowCallout = YES;
         customPinView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         
+        //if coming to map from detail view, have appropriate annotation selected
+        if([annotation.title isEqualToString:[self.dictionaryOfSelectedAnnotation valueForKey:@"name"]]){
+            [customPinView setSelected: YES animated: YES];
+        }
+        
         return customPinView;
     }
     return nil;
@@ -103,7 +108,7 @@
     //gain access to locationsArray in AppDelegate:
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    //loop through dictionaries to find identifier match and set to class property
+    //loop through dictionaries to find identifier match and set to class property for passing to detail view
     for (NSDictionary* item in appDelegate.locationsArray){
         if ([[item valueForKey:@"name"] isEqualToString: view.annotation.title]){
             self.dictionaryOfSelectedAnnotation = item;
