@@ -42,6 +42,10 @@
         MapAnnotation* annotation = [[MapAnnotation alloc] initWithDictionary: item];
         
         [self.mapView addAnnotation:annotation];
+        
+        MKCoordinateRegion currentRegion = MKCoordinateRegionMakeWithDistance(self.mapView.userLocation.coordinate, 10000, 10000);
+        [self.mapView setRegion:currentRegion animated:YES];
+
     }
 }
 
