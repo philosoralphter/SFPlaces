@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		619BE303174D9B0200BDFA9C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 619BE302174D9B0200BDFA9C /* Icon.png */; };
+		619BE305174D9B0900BDFA9C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 619BE304174D9B0900BDFA9C /* Icon@2x.png */; };
 		DE2B23601730BC07006233FC /* MapToDetailSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2B235F1730BC07006233FC /* MapToDetailSegue.m */; };
 		DE4509D0173B498F000FC8B9 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = DE4509CF173B498F000FC8B9 /* locations.json */; };
 		DE6B7134172220F300E53A23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6B7133172220F200E53A23 /* UIKit.framework */; };
@@ -75,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		619BE302174D9B0200BDFA9C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		619BE304174D9B0900BDFA9C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DE2B235E1730BC07006233FC /* MapToDetailSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapToDetailSegue.h; sourceTree = "<group>"; };
 		DE2B235F1730BC07006233FC /* MapToDetailSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapToDetailSegue.m; sourceTree = "<group>"; };
 		DE4509CF173B498F000FC8B9 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = SOURCE_ROOT; };
@@ -172,6 +176,8 @@
 		DE6B7127172220F200E53A23 = {
 			isa = PBXGroup;
 			children = (
+				619BE304174D9B0900BDFA9C /* Icon@2x.png */,
+				619BE302174D9B0200BDFA9C /* Icon.png */,
 				DE6B7139172220F300E53A23 /* SFPlaces */,
 				DE6B7168172220F300E53A23 /* SFPlacesTests */,
 				DE6B7132172220F200E53A23 /* Frameworks */,
@@ -403,6 +409,8 @@
 				DEE9A0AA174B05C8004F7AEC /* Sutro Baths.png in Resources */,
 				DEE9A0AB174B05C8004F7AEC /* Tommy's Joynt.png in Resources */,
 				DEE9A0AC174B05C8004F7AEC /* Wave Organ.png in Resources */,
+				619BE303174D9B0200BDFA9C /* Icon.png in Resources */,
+				619BE305174D9B0900BDFA9C /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +564,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SFPlaces/SFPlaces-Prefix.pch";
 				INFOPLIST_FILE = "SFPlaces/SFPlaces-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -567,6 +576,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SFPlaces/SFPlaces-Prefix.pch";
 				INFOPLIST_FILE = "SFPlaces/SFPlaces-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,245 +1,245 @@
 {
     "locations": [
-     
-     {
-          "name":"Osama Bin Laden's Condo",
-          "latitude":"37.791447",
-          "longitude":"-122.413407",
-          "description":"Osama Bin Laden lived here in the 1970's when he was a rich Saudi playboy",
-          "imgpath":"Osama Bin Laden's Condo.png",
-          "imgtitle":"sample title",
-          "thumbpath":"sample/thumb",
-     },
-     
-     {
-     "name":"Sutro Baths",
-     "latitude":"37.779806",
-     "longitude":"-122.513566",
-     "imgpath":"Sutro Baths.png",
-     "subtitle":"subtitle",
-     "thumbpath":"thumbpath",
-     "description":"On a stroll through the Sutro Bath ruins, one-armed Uncle Victor (Charles Tyner) offers morose young Harold (Bud Cort) a lesson on the joys of military service in Harold and Maude. 'Only one thing kept going through my mind. Kill! Kill for Joe and Mack and all the rest of the guys! Kill!' The 1971 feature directed by Hal Ashby is one of the cinema's greatest dark comedies. Harold is obsessed with death until he meets 79 year-old free spirit Maude. Highlights include several fake suicide attempts Harold stages to horrify his guileless mother, played by Vivian Pickles. Ruth Gordon is total perfection as Maude. San Franciscans will also appreciate one scene that exquisitely documents the former landmark collection of makeshift sculpture that used to dot the mudflats near west bound I-80 and the Bay Bridge and was for many years considered a blight by some.  -MisterSF.com",
-      },
-      
-      {
-     "name":"Tommy's Joynt",
-     "latitude":"37.785639",
-     "longitude":"-122.421727",
-     "imgpath":"Tommy's Joynt.png",
-     "subtitle":"subtitle",
-     "thumbpath":"thumbpath",
-     "description":"Tommy's Joynt is the original hof-brau of San Francisco , and has become one of San Francisco's longest living institutions. We sit here at Van Ness and Geary, on Route 101, at the crossroads of the City. 'Welcome Stranger' decals itself above our front doors, front doors that beg you to come inside and eat 'Where Turkey is King.' While the City has been changing year after year, we remain steadfast in our opposition to change.  -Tommysjoynt.com",
-      },
-      
-      {
-     "name":"City Lights Books",
-     "latitude":"37.797696",
-     "longitude":"-122.406562",
-     "imgpath":"City Lights Books.png",
-     "subtitle":"subtitle",
-     "thumbpath":"thumbpath",
-     "description":"Founded in 1953 by poet Lawrence Ferlinghetti and Peter D. Martin, City Lights is one of the truly great independent bookstores in the United States, a place where booklovers from across the country and around the world come to browse, read, and just soak in the ambiance of alternative culture's only 'Literary Landmark.'  -citylights.com",
-      },
-      
-      {
-     "name":"Cable Car Barn",
-     "latitude":"37.79458",
-     "longitude":"-122.411438",
-     "imgpath":"Cable Car Barn.png",
-     "subtitle":"subtitle",
-     "thumbpath":"thumbpath",
-     "description":"Inside the historic Cable Car Barn & Powerhouse, visitors can view the actual cable winding machinery from an elevated gallery, as well as the path of the cable entering the building and leaving underneath the street in the sheave room viewing area.  Also on display are various mechanical devices, such as grips, track, trucks, cable and brake mechanisms with corresponding explanations.",
-      },
-      
-      {
-     "name":"Clarion Alley",
-     "latitude":"37.762971",
-     "longitude":"-122.420622",
-     "imgpath":"Clarion Alley.png",
-     "subtitle":"subtitle",
-     "thumbpath":"thumbpath",
-     "description":"Clarion Alley Mural Project (CAMP) is an artists' collective formed in October 1992 by a volunteer collective of six North Mission residents: Aaron Noble, Michael O'Connor, Sebastiana Pastor, Rigo 92, Mary Gail Snyder, and Aracely Soriano. The project creates and facilitates other artists creating murals on Clarion Alley, between Valencia and Mission Streets and surrounding areas. -Wikipedia",
-      },
-      
-      {
-	"name":"Conservatory of Flowers",
-	"latitude":"37.772",
-	"longitude":"-122.460",
-	"imgpath":"Conservatory of Flowers.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"Home to a collection of rare and exotic plants. Constructed in 1878, it is the oldest building in Golden Gate Park.",
-},
-
-{
-	"name":"Lombard Street",
-	"latitude":"37.801944",
-	"longitude":"-122.418889",
-	"imgpath":"Lombard Street.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"A famous winding road with eight hairpin turns.",
-},
-
-{
-	"name":"Palace of Fine Arts",
-	"latitude":"37.802778",
-	"longitude":"-122.448333",
-	"imgpath":"Palace of Fine Arts.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"A structure from the 1915 Panama-Pacific Exposition that exhibited works of art.",
-},
-
-{
-	"name":"Ferry Building",
-	"latitude":"37.7955",
-	"longitude":"-122.3937",
-	"imgpath":"Ferry Building.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"A ferry terminal housing a large marketplace with many shops and restaurants.",
-},
-
-{
-	"name":"Golden Gate Park Windmills",
-	"latitude":"37.770732",
-	"longitude":"-122.509403",
-	"imgpath":"imgpath",
-	"subtitle":"Golden Gate Park Windmills.png",
-	"thumbpath":"thumbpath",
-	"description":"Two functionining windmills located in Golden Gate Park.",
-},
-
-{
-	"name":"Mission Dolores",
-	"latitude":"37.764389",
-	"longitude":"-122.427028",
-	"imgpath":"Mission Dolores.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"The oldest surviving structure in San Francisco.",
-},
-
-{
-	"name":"McElroy Octagon House",
-	"latitude":"37.797778",
-	"longitude":"-122.426389",
-	"imgpath":"McElroy Octagon House.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"An octagonal house built by William C. McElroy.",
-},
-
-{
-	"name":"Feusier Octagon House",
-	"latitude":"37.798333",
-	"longitude":"-122.415556",
-	"imgpath":"Feusier Octagon House.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"An octagonal house built by George Kenny.",
-},
-
-{
-	"name":"Ghiradelli Square",
-	"latitude":"37.805703",
-	"longitude":"-122.421794",
-	"imgpath":"imgpath",
-	"subtitle":"Ghiradelli Square.png",
-	"thumbpath":"thumbpath",
-	"description":"A landmark with shops and restaurants. Located at Fisherman's Wharf.",
-},
-
-{
-	"name":"Columbus Tower",
-	"latitude":"37.7964",
-	"longitude":"-122.4049",
-	"imgpath":"Columbus Tower.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"A mixed-use building built in a copper-green Flatiron style.",
-},
-
-{
-	"name":"Wave Organ",
-	"latitude":"37.807087",
-	"longitude":"-122.438012",
-	"imgpath":"Wave Organ.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"A collection of PVC pipes creating a musical instrument played by the waves.",
-},
-
-{
-	"name":"Neptune Society Columbarium",
-	"latitude":"37.780612",
-	"longitude":"-122.457072",
-	"imgpath":"Neptune Society Columbarium.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"The only non-denominational burial place in the city that is open to the public and has space available. Hopefully you won't need it, though.",
-},
-
-{
-	"name":"Audium",
-	"latitude":"37.788331",
-	"longitude":"-122.423923",
-	"imgpath":"Audium.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"A theater that pioneers the \"exploration of space in music\".",
-},
-
-{
-	"name":"Musee Mecanique",
-	"latitude":"37.809229",
-	"longitude":"-122.415901",
-	"imgpath":"Musee Mecanique.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"A museum with an extensive collection of mechanically operated musical instruments and antique arcade machines.",
-},
-
-{
-	"name":"Coit Tower",
-	"latitude":"37.8025",
-	"longitude":"-122.405833",
-	"imgpath":"Coit Tower.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"Offers great views of San Francisco.",
-},
-
-{
-	"name":"San Francisco Art Institute",
-	"latitude":"37.803456",
-	"longitude":"-122.417144",
-	"imgpath":"San Francisco Art Institute.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"One of the oldest art schools in the United States. Hosts public events and exhibits.",
-},
-
-{
-	"name":"California Academy of Sciences",
-	"latitude":"37.770100",
-	"longitude":"-122.466407",
-	"imgpath":"California Academy of Sciences.png",
-	"subtitle":"subtitle",
-	"thumbpath":"thumbpath",
-	"description":"A museum of natural history. One of the largest in the world.",
-},
-
-{
-	"name":"Metreon",
-	"latitude":"37.784374",
-	"longitude":"-122.403424",
-	"imgpath":"Metreon.png",
-	"subtitle":"Spend away!",
-	"thumbpath":"thumbpath",
-	"description":"A shopping center with many dining and entertainment options, including a theater.",
-},
-        
-    ]
+                  
+                  {
+                  "name":"Osama Bin Laden's Condo",
+                  "latitude":"37.791447",
+                  "longitude":"-122.413407",
+                  "description":"Osama Bin Laden lived here in the 1970's when he was a rich Saudi playboy",
+                  "imgpath":"Osama Bin Laden's Condo.png",
+                  "imgtitle":"sample title",
+                  "thumbpath":"sample/thumb",
+                  },
+                  
+                  {
+                  "name":"Sutro Baths",
+                  "latitude":"37.779806",
+                  "longitude":"-122.513566",
+                  "imgpath":"Sutro Baths.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The Sutro Baths were a large, privately owned swimming pool complex in San Francisco, California, built in the late 19th century. The building housing the baths burned down in 1966 and was abandoned. The ruins can still be visited.  On March 14, 1896, the Sutro Baths were opened to the public as the world's largest indoor swimming pool establishment. The baths were built on the sleepy western side of San Francisco by wealthy entrepreneur and former mayor of San Francisco (1894–1896), Adolph Sutro. The vast glass, iron, wood, and reinforced concrete structure was mostly hidden, and filled a small beach inlet below the Cliff House, also owned by Adolph Sutro at the time. Both the Cliff House and the former baths site are now a part of the Golden Gate National Recreation Area and operated by the United States National Park Service.",
+                  },
+                  
+                  {
+                  "name":"Tommy's Joynt",
+                  "latitude":"37.785639",
+                  "longitude":"-122.421727",
+                  "imgpath":"Tommy's Joynt.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"Tommy's Joynt is the original hof-brau of San Francisco , and has become one of San Francisco's longest living institutions. We sit here at Van Ness and Geary, on Route 101, at the crossroads of the City. 'Welcome Stranger' decals itself above our front doors, front doors that beg you to come inside and eat 'Where Turkey is King.' While the City has been changing year after year, we remain steadfast in our opposition to change.  -Tommysjoynt.com",
+                  },
+                  
+                  {
+                  "name":"City Lights Books",
+                  "latitude":"37.797696",
+                  "longitude":"-122.406562",
+                  "imgpath":"City Lights Books.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"Founded in 1953 by poet Lawrence Ferlinghetti and Peter D. Martin, City Lights is one of the truly great independent bookstores in the United States, a place where booklovers from across the country and around the world come to browse, read, and just soak in the ambiance of alternative culture's only 'Literary Landmark.'  -citylights.com",
+                  },
+                  
+                  {
+                  "name":"Cable Car Barn",
+                  "latitude":"37.79458",
+                  "longitude":"-122.411438",
+                  "imgpath":"Cable Car Barn.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"Inside the historic Cable Car Barn & Powerhouse, visitors can view the actual cable winding machinery from an elevated gallery, as well as the path of the cable entering the building and leaving underneath the street in the sheave room viewing area.  Also on display are various mechanical devices, such as grips, track, trucks, cable and brake mechanisms with corresponding explanations.",
+                  },
+                  
+                  {
+                  "name":"Clarion Alley",
+                  "latitude":"37.762971",
+                  "longitude":"-122.420622",
+                  "imgpath":"Clarion Alley.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"Clarion Alley Mural Project (CAMP) is an artists' collective formed in October 1992 by a volunteer collective of six North Mission residents: Aaron Noble, Michael O'Connor, Sebastiana Pastor, Rigo 92, Mary Gail Snyder, and Aracely Soriano. The project creates and facilitates other artists creating murals on Clarion Alley, between Valencia and Mission Streets and surrounding areas.",
+                  },
+                  
+                  {
+                  "name":"Conservatory of Flowers",
+                  "latitude":"37.772",
+                  "longitude":"-122.460",
+                  "imgpath":"Conservatory of Flowers.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The Conservatory of Flowers is a greenhouse and botanical garden that houses a collection of rare and exotic plants in Golden Gate Park, San Francisco, California. With construction completed in 1878, it remains the oldest building in the park, and the oldest municipal wooden conservatory remaining in the United States. It is also one of the first municipal conservatories constructed in the country. For these distinctions and for its associated historical, architectural, and engineering merits, the Conservatory of Flowers is listed on the National Register of Historic Places, the California Register of Historical Places, is a California Historical Landmark, and a San Francisco Designated Landmark.",
+                  },
+                  
+                  {
+                  "name":"Lombard Street",
+                  "latitude":"37.801944",
+                  "longitude":"-122.418889",
+                  "imgpath":"Lombard Street.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"Often called the \"Crookedest Street in the World,\" it is not even the crookedest street in San Francisco.  That would be Victoria Street on Potrero Hill.  But Lombard is more picturesque famous.",
+                  },
+                  
+                  {
+                  "name":"Palace of Fine Arts",
+                  "latitude":"37.802778",
+                  "longitude":"-122.448333",
+                  "imgpath":"Palace of Fine Arts.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The Palace of Fine Arts in the Marina District of San Francisco, California, is a monumental structure originally constructed for the 1915 Panama-Pacific Exposition in order to exhibit works of art presented there. One of only a few surviving structures from the Exposition, it is the only one still situated on its original site. It was rebuilt in 1965, and renovation of the lagoon, walkways, and a seismic retrofit were completed in early 2009. The Palace of Fine Arts was one of ten palaces at the heart of the Panama-Pacific Exhibition, which also included the exhibit palaces of Education, Liberal Arts, Manufactures, Varied Industries, Agriculture, Food Products, Transportation, Mines and Metallurgy and the Palace of Machinery.[4] The Palace of Fine Arts was designed by Bernard Maybeck, who took his inspiration from Roman and Greek architecture in designing what was essentially a fictional ruin from another time.",
+                  },
+                  
+                  {
+                  "name":"Ferry Building",
+                  "latitude":"37.7955",
+                  "longitude":"-122.3937",
+                  "imgpath":"Ferry Building.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The San Francisco Ferry Building is a terminal for ferries that travel across the San Francisco Bay, a marketplace, and also has offices, located on The Embarcadero in San Francisco, California. On top of the building is a 245-foot tall clock tower, with four clock dials, each 22 feet in diameter, which can be seen from Market Street, a main thoroughfare of the city. Designed by American architect A. Page Brown in the Beaux Arts style in 1892, the ferry building was completed in 1898. At its opening, it was the largest project undertaken in the city up to that time. Brown designed the clock tower after the 12th-century Giralda bell tower in Seville, Spain, and the entire length of the building on both frontages is based on an arched arcade.",
+                  },
+                  
+                  {
+                  "name":"Golden Gate Park Windmills",
+                  "latitude":"37.770732",
+                  "longitude":"-122.509403",
+                  "imgpath":"imgpath",
+                  "subtitle":"Golden Gate Park Windmills.png",
+                  "thumbpath":"thumbpath",
+                  "description":"There are two functioning windmills on the western edge of Golden Gate Park in San Francisco, California. The Dutch Windmill was completed in 1903 and the Murphy Windmill was completed in 1908. The Dutch Mill was placed on the San Francisco Designated Landmark list December 6, 1981 and the Murphy Mill was added July 2, 2000.  Golden Gate Park was planted on sand dunes and required substantial irrigation. In 1902 the Park Commission authorized the construction of two windmills to pump ground water for park irrigation rather than purchasing water at exorbitant costs from the Spring Valley Water Company. The Dutch Mill was completed one year later and pumped 30,000 gallons per hour. Five years later the Murphy Mill pumped an addition 40,000 gallons per hour to the park.  Electric water pumps replaced the need for windmills in 1913 and the two mills fell into neglect. By the 1950s the mills were in a state of ruin.  A Citizens Commission restoration effort led by Eleanor Rossi Crabtree in 1964 was formed for the Dutch Mill. The Dutch Mill was restored in 1981. The Queen Wilhelmina Tullip Garden is located next to the Dutch Mill.Plans for the Murphy Mill restoration began in 2002 with a reopening in 2012",
+                  },
+                  
+                  {
+                  "name":"Mission Dolores",
+                  "latitude":"37.764389",
+                  "longitude":"-122.427028",
+                  "imgpath":"Mission Dolores.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"Mission San Francisco de Asís, or Mission Dolores, is the oldest surviving structure in San Francisco and the sixth religious settlement established as part of the California chain of missions. The Mission was founded on June 29, 1776, by Lieutenant José Joaquin Moraga and Father Francisco Palóu (a companion of Father Junipero Serra), both members of the de Anza Expedition, which had been charged with bringing Spanish settlers to Alta (upper) California, and evangelizing the local Natives, the Ohlone.",
+                  },
+                  
+                  {
+                  "name":"McElroy Octagon House",
+                  "latitude":"37.797778",
+                  "longitude":"-122.426389",
+                  "imgpath":"McElroy Octagon House.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The McElroy Octagon House, also known as the Colonial Dames Octagon House, is an historic octagonal house now located at 2645 Gough Street at Union Street in the Cow Hollow section of San Francisco, California. William C. McElroy built it in 1861 across the street from its present location. It was vacant and neglected in 1951 when the Colonial Dames of America in California bought, moved it across the street and began its restoration. In 1971 it became San Francisco Landmark 17. It and the Feusier Octagon House are the only two remaining octagon houses in the city.",
+                  },
+                  
+                  {
+                  "name":"Feusier Octagon House",
+                  "latitude":"37.798333",
+                  "longitude":"-122.415556",
+                  "imgpath":"Feusier Octagon House.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The Feusier Octagon House is an historic octagonal house located at 1067 Green Street, in the Russian Hill neighborhood of San Francisco, California. It was built between 1857 and 1858 by George Kenny, who sold it in 1870 to Louis Feusier. It is San Francisco Landmark 36 and is one of the two surviving octagon houses in the city.",
+                  },
+                  
+                  {
+                  "name":"Ghiradelli Square",
+                  "latitude":"37.805703",
+                  "longitude":"-122.421794",
+                  "imgpath":"imgpath",
+                  "subtitle":"Ghiradelli Square.png",
+                  "thumbpath":"thumbpath",
+                  "description":"Ghirardelli Square is a landmark with shops and restaurants in the Fisherman's Wharf area of San Francisco, California, USA. A portion of the area is listed on the National Register of Historic Places as Pioneer Woolen Mills and D. Ghirardelli Company. In 1893, Domingo Ghirardelli purchased the entire city block in order to make it into the headquarters of the Ghirardelli Chocolate Company. In the early 1960s, the Ghirardelli Chocolate Company was bought by the Golden Grain Macaroni (the makers of Rice-A-Roni, the \"San Francisco Treat\"Company which moved the headquarters off-site to San Leandro and put the square up for sale.",
+                  },
+                  
+                  {
+                  "name":"Columbus Tower",
+                  "latitude":"37.7964",
+                  "longitude":"-122.4049",
+                  "imgpath":"Columbus Tower.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"A mixed-use building built in a copper-green Flatiron style.",
+                  },
+                  
+                  {
+                  "name":"Wave Organ",
+                  "latitude":"37.807087",
+                  "longitude":"-122.438012",
+                  "imgpath":"Wave Organ.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The Wave Organ is an acoustic sculpture constructed on the shore of San Francisco Bay by the Exploratorium. Through a series of pipes, the wave organ interacts with the waves of the bay and conveys their sound to listeners at several different stations. The effects produced vary depending on the level of the tide but include rumbles, gurgles, sloshes, hisses, and other more typical wave sounds. The structure incorporates stone platforms and benches where visitors may sit near the mouths of pipes, listening. The stone pieces used in its construction were salvaged from the demolition of the Laurel Hill Cemetery in San Francisco.  There is a panoramic view of the city across the narrow channel into the St.Francis and Golden Gate yacht clubs, bounded on the left by the Fort Mason piers and to the right by a towering eucalyptus grove bordering Crissy Field. The Marina Green park lies directly across, just beyond a stone sea wall",
+                  },
+                  
+                  {
+                  "name":"Neptune Society Columbarium",
+                  "latitude":"37.780612",
+                  "longitude":"-122.457072",
+                  "imgpath":"Neptune Society Columbarium.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The Neptune Society Columbarium of San Francisco is a columbarium (repository for human ashes) owned and operated by the Neptune Society of Northern California, at One Loraine Court, near Stanyan and Anza Streets, just north of Golden Gate Park in San Francisco, California. Built in 1898 by architect Bernard J.S. Cahill, the copper-domed Columbarium is an example of Neo-Classical architecture. It is the only non-denominational burial place within San Francisco's city limits that is open to the public and has space available.",
+                  },
+                  
+                  {
+                  "name":"Audium",
+                  "latitude":"37.788331",
+                  "longitude":"-122.423923",
+                  "imgpath":"Audium.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"Audium is a unique sound art phenomenon that has been presented weekly in San Francisco since 1967. Audium is a creation of composer Stan Shaff that is performed on original equipment designed by Doug McEachern. It is played in a completely dark theater designed to heighten the spatial effects of sound and for \"choreographing sound in space.\" Compositions are developed from acoustic and electronic instruments and from sounds of the natural world used as metaphors. Works are \"sculpted\" in space through 176 speakers. Audium has pioneered the language of space in music for over 50 years, as progressively complex compositions evolved jointly with originally designed performance equipment. Its three major concerns have been development and exploration of space as a language of music composition, live performance in a space uniquely designed for spatial composition, and the role of the environment in the totality of the work.",
+                  },
+                  
+                  {
+                  "name":"Musee Mecanique",
+                  "latitude":"37.809229",
+                  "longitude":"-122.415901",
+                  "imgpath":"Musee Mecanique.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The Musée Mécanique  is a for-profit interactive museum consisting of 20th-century penny arcade games and artifacts located at Fisherman's Wharf in San Francisco, California. The museum owns over 300 mechanical machines, and is one of the largest privately owned collection of such games in the world.  The Musée Mécanique has a collection of more than 300 mechanical games including: music boxes, coin-operated fortune tellers, Mutoscopes, video games, love testers, player pianos, peep shows, photo booths, dioramas and more. The museum displays about 200 of the machines at their current location.The museum has many rare and historical pieces. A large diorama of a traveling carnival with a ferris wheel and other rides sits in the center of the museum. The museum owns what is believed to be the only steam-powered motorcycle in the world, built in Sacramento, in 1912. The Royal Court diorama features couples ballroom dancing and was featured in the Panama–Pacific International Exposition. Laffing Sal, which has been described as \"famously creepy\", is a 6-foot-tall, laughing automaton and was originally located at the Fun House at Playland. The museum also owns a collection of machines made out of toothpicks by prisoners at Alcatraz.",
+                  },
+                  
+                  {
+                  "name":"Coit Tower",
+                  "latitude":"37.8025",
+                  "longitude":"-122.405833",
+                  "imgpath":"Coit Tower.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"Coit Tower, also known as the Lillian Coit Memorial Tower, is a 210-foot (64 m) tower in the Telegraph Hill neighborhood of San Francisco, California. The tower, in the city's Pioneer Park, was built in 1933 using Lillie Hitchcock Coit's bequest to beautify the city of San Francisco; at her death in 1929 Coit left one-third of her estate to the city for civic beautification. The tower was proposed in 1931 as an appropriate use of Coit's gift. It was added to the National Register of Historic Places on January 29, 2008.  The art deco tower, built of unpainted reinforced concrete, was designed by architects Arthur Brown, Jr. and Henry Howard, with fresco murals by 27 different on-site artists and their numerous assistants, plus two additional paintings installed after creation off-site. Although an apocryphal story claims that the tower was designed to resemble a fire hose nozzle due to Coit's affinity with the San Francisco firefighters of the day, the resemblance is coincidental.  'Firebelle Lil' Coit was one of the more eccentric characters in the history of North Beach and Telegraph Hill, smoking cigars and wearing trousers long before it was socially acceptable for women to do so. She was an avid gambler and often dressed like a man in order to gamble in the males-only establishments that dotted North Beach. Coit was reputed to have shaved her head so her wigs would fit better.  Lillie had a special relationship with the city's firefighters. She had from very early days of her life been fascinated and enamored of the red shirted and helmeted fire fighters. At the age of fifteen she witnessed the Knickerbocker Engine Co. No. 5 in response to a fire call up on Telegraph Hill when they were shorthanded; she threw her school books to the ground and pitched in to help, calling out to other bystanders to help get the engine up the hill to the fire, to get the first water onto the blaze. After that Lillie became the Engine Co. mascot and could barely be constrained by her parents from jumping into action at the sound of every fire bell. After this she was frequently riding with the Knickerbocker Engine Co. 5,especially so in street parades and celebrations in which the Engine Co. participated. Through her youth and adulthood Lillie was recognized as an honorary firefighter.  After her death, she was laid to rest wearing an Engine Co. 5 badge." ,
+                  },
+                  
+                  {
+                  "name":"San Francisco Art Institute",
+                  "latitude":"37.803456",
+                  "longitude":"-122.417144",
+                  "imgpath":"San Francisco Art Institute.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"San Francisco Art Institute (SFAI) is a school of higher education in contemporary art with the main campus in the Russian Hill district of San Francisco, California. Its graduate center is in the Dogpatch neighborhood. The private, non-profit institution is accredited by WASC and is a member of the Association of Independent Colleges of Art and Design. SFAI was founded in 1871, and is one of the oldest art schools in the United States and the oldest west of the Mississippi River.  ",
+                  },
+                  
+                  {
+                  "name":"California Academy of Sciences",
+                  "latitude":"37.770100",
+                  "longitude":"-122.466407",
+                  "imgpath":"California Academy of Sciences.png",
+                  "subtitle":"subtitle",
+                  "thumbpath":"thumbpath",
+                  "description":"The California Academy of Sciences is among the largest museums of natural history in the world. The academy began in 1853 as a learned society and still carries out a large amount of original research, with exhibits and education becoming significant endeavors of the museum during the 20th century.  Completely rebuilt in 2008, the building covers 400,000 square feet and is among the newest natural history museums in the United States. The primary building in Golden Gate Park reopened on September 27, 2008.  The academy conducts research in 11 different fields, including anthropology, marine biology, botany, entomology, herpetology, ichthyology, invertebrate zoology, mammalogy, and ornithology.  Geological research also has a long history at the academy, with a concentration on paleontology.[citation needed] There also is a strong emphasis on environmental concerns, with all the various departments collaborating closely to focus on systematic biology and biodiversity.",
+                  },
+                  
+                  {
+                  "name":"Metreon",
+                  "latitude":"37.784374",
+                  "longitude":"-122.403424",
+                  "imgpath":"Metreon.png",
+                  "subtitle":"Spend away!",
+                  "thumbpath":"thumbpath",
+                  "description":"The Metreon is a shopping center located in downtown San Francisco at the corner of 4th Street and Mission Street. It is a four-story 350,000 square foot (33,000 m²) building built over the corner of the underground Moscone Center convention center. Metreon opened on June 16, 1999, as the first of a proposed chain of Sony \"urban entertainment centers\", aggregating dining, gaming, music, exhibitions, shopping, and movies. Sony intended the ambitious 85 million dollar project to be not only a theme park and gallery for Sony products but also a way to reinforce a sophisticated image for the Sony brand.  Now, it is home to The Metreon 16, an IMAX 3D movie theater operated by AMC Loews Cineplex, Jillians, a restaurant, and one of the first City Target stores.",
+                  },
+                  
+                  ]
 }
